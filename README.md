@@ -58,7 +58,7 @@
 - As a user, I should see a reset button at the bottom of the screen to get a new random key and chord progression
 
 ## Stretch Goals:
-- ~~Animated the two images on the side~~
+- Animated the two images on the side
 - wiggle when page is reset for new random key and progression
 - Hint light bulb button for the first chord of the progression
 - Help button to explain game
