@@ -1,0 +1,43 @@
+html {
+    box-sizing: border-box;
+}
+
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    display: grid;
+    height: 100vh;
+    margin: 10px;
+    font-family: cursive;
+    justify-content: center;
+    background-color: black;
+    color: white;
+}
+
+h1 {
+    color: white;
+}
+
+#guitarpic {
+    background-color: blue;
+}
+
+#pianopic {
+    background-color: red;
+}
+
+main {
+    background-color: cornflowerblue;
+}
+
+footer {
+    background-color: crimson;
+}
+
+.grid-cntr {
+    display: grid;
+    place-items: center;
+}

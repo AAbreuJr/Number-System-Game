@@ -4,44 +4,37 @@
 const keysArray = ["A", "B", "C", "D", "E", "F", "G"];
 
 // CHORDS FOR EACH KEY
-let chordsOfKey = [
+const chordsOfKey = [
 {
-    type: "A",
+    key: "A",
     chords: ["A", "Bm", "C#m", "D", "E", "F#m", "G#"],    
 },
 {
-    type: "B",
+    key: "B",
     chords: ["B", "C#m", "D#m", "E", "F#", "G#m", "A#"],
 },
 {
-    type: "C",
+    key: "C",
     chords: ["C", "Dm", "Em", "F", "G", "Am", "B"],
 },
 {
-    type: "D",
+    key: "D",
     chords: ["D", "Em", "F#m", "G#m", "G", "Bm", "C#"],
 },
 {
-    type: "E",
+    key: "E",
     chords: ["E", "F#m", "G#m", "A", "B", "C#m", "D#"],
 },
 {
-    type: "F",
+    key: "F",
     chords: ["F", "Gm", "Am", "Bb", "C", "Dm", "E"],
 },
 {
-    type: "G",
+    key: "G",
     chords: ["G", "Am", "Bm", "C", "D", "Em", "F#"],
 },
 ]
 
-// ["A", "Bm", "C#m", "D", "E", "F#m", "G#"];
-// ["B", "C#m", "D#m", "E", "F#", "G#m", "A#"];
-// ["C", "Dm", "Em", "F", "G", "Am", "B"];
-// ["D", "Em", "F#m", "G#m", "G", "Bm", "C#"];
-// ["E", "F#m", "G#m", "A", "B", "C#m", "D#"];
-// ["A", "Bm", "C#m", "D", "E", "F#m", "G#"];
-// ["A", "Bm", "C#m", "D", "E", "F#m", "G#"];
 
 //PROGRESSIONS
 const progressionArray = ["1", ];
