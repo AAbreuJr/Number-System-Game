@@ -1,43 +1,8 @@
-html {
-    box-sizing: border-box;
-}
-
-*::before,
-*::after {
-    box-sizing: inherit;
-}
-
-body {
-    display: grid;
+section {
+    width: 100%;
+    max-width: 832px;
     height: 100vh;
-    margin: 10px;
-    font-family: cursive;
-    justify-content: center;
-    background-color: black;
-    color: white;
-}
-
-h1 {
-    color: white;
-}
-
-#guitarpic {
-    background-color: blue;
-}
-
-#pianopic {
-    background-color: red;
-}
-
-main {
+    max-width: 450px;
     background-color: cornflowerblue;
-}
-
-footer {
-    background-color: crimson;
-}
-
-.grid-cntr {
-    display: grid;
-    place-items: center;
+    margin-bottom: 25px;
 }
