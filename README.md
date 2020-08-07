@@ -60,5 +60,6 @@
 ## Stretch Goals:
 - Animated the two images on the side
 - wiggle when page is reset for new random key and progression
+- Incorporate sharps and flats for the different keys
 - Hint light bulb button for the first chord of the progression
 - Help button to explain game
