@@ -37,7 +37,12 @@ const chordsOfKey = [
 
 
 //PROGRESSIONS
-const progressionArray = ["1", ];
+const progressionArray = [
+{
+    progression: [""]
+
+}
+];
 
 
 /*------Variables (state)------*/
