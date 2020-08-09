@@ -19,37 +19,37 @@ const progressionArray = [
 },
 {
     progression1364: ["1", "3", "6", "4"],
-};
+}
 ];
 
 // CHORDS FOR EACH KEY
 const chordsOfKey = [
 {
-    key: "A",
+    root: "A",
     chords: ["A", "Bm", "C#m", "D", "E", "F#m", "G#"],    
 },
 {
-    key: "B",
+    root: "B",
     chords: ["B", "C#m", "D#m", "E", "F#", "G#m", "A#"],
 },
 {
-    key: "C",
+    root: "C",
     chords: ["C", "Dm", "Em", "F", "G", "Am", "B"],
 },
 {
-    key: "D",
+    root: "D",
     chords: ["D", "Em", "F#m", "G#m", "G", "Bm", "C#"],
 },
 {
-    key: "E",
+    root: "E",
     chords: ["E", "F#m", "G#m", "A", "B", "C#m", "D#"],
 },
 {
-    key: "F",
+    root: "F",
     chords: ["F", "Gm", "Am", "Bb", "C", "Dm", "E"],
 },
 {
-    key: "G",
+    root: "G",
     chords: ["G", "Am", "Bm", "C", "D", "Em", "F#"],
 },
 ]
@@ -58,8 +58,8 @@ const chordsOfKey = [
 
 // Variables might include (board/turn/winner)
 
+let randomKey = [];
 let chords = [];
-let randomKey = "";
 let randomProg = [];
 
 /*------Cached Element References------*/
@@ -80,8 +80,8 @@ let randomProg = [];
 // get the correct chords that corresponds to they key
 
 function getRandomKey (){
-    let randomKey = keysArray[Math.floor(Math.random() * keysArray.length)];
-    return randomKey;
+    let randomKey = keysArray[Math.floor(Math.random() * keysArray.length)]
+    return randomKey
 }
 
 // gets a random progression from the five most common
@@ -91,15 +91,11 @@ function getRandomProg (){
 }
 
 // takes the random key and takes the corresponding chords and outputs it be able to press
-function getChords(){
-    if (keysArray[0] === chordsOfKey.key[0]) {
-       console.log(chords[""]);
-    }
+function getChords (){
+    // take the random generated randomKey string and compare to the chordsOfKey[i].root
+    
+    // if true return chordsOfKey[i].chords
 }
-
-
-
-
 
 
 
