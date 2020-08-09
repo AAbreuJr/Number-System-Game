@@ -3,6 +3,25 @@
 // KEYS ARRAY
 const keysArray = ["A", "B", "C", "D", "E", "F", "G"];
 
+//PROGRESSIONS
+const progressionArray = [
+{
+    progression1564: ["1", "5", "6", "4"],
+},
+{
+    progression6251: ["6", "2", "5", "1"],
+},
+{
+    progression6415: ["6", "4", "1", "5"],
+},
+{
+    progression1465: ["1", "4", "6", "5"],
+},
+{
+    progression1364: ["1", "3", "6", "4"],
+};
+];
+
 // CHORDS FOR EACH KEY
 const chordsOfKey = [
 {
@@ -35,48 +54,54 @@ const chordsOfKey = [
 },
 ]
 
-
-//PROGRESSIONS
-const progressionArray = [
-{
-    progression: [""]
-
-}
-];
-
-
 /*------Variables (state)------*/
 
 // Variables might include (board/turn/winner)
 
 let chords = [];
+let randomKey = "";
+let randomProg = [];
 
 /*------Cached Element References------*/
 
 // You might choose to put your game status here
+
 
 /*------Event Listeners------*/
 
 // This is where you should put the event listener
 // for a mouse-click
 
+
 /*------Functions------*/
 
+// ~~get a random key from the keysArray~~
+// ~~get a random progression from the progressionArray~~
+// get the correct chords that corresponds to they key
 
-// Some functions you might choose to use:
-
-// gets a random key from the keysArray
-// outputs the random key to the screen
-function getRandomKey (){ 
+function getRandomKey (){
+    let randomKey = keysArray[Math.floor(Math.random() * keysArray.length)];
+    return randomKey;
 }
 
 // gets a random progression from the five most common
 function getRandomProg (){
+    let randomProg = progressionArray[Math.floor(Math.random() * progressionArray.length)];
+    return randomProg;
 }
 
 // takes the random key and takes the corresponding chords and outputs it be able to press
 function getChords(){
+    if (keysArray[0] === chordsOfKey.key[0]) {
+       console.log(chords[""]);
+    }
 }
+
+
+
+
+
+
 
 
 // Initialization function:
