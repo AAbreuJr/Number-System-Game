@@ -81,7 +81,8 @@ let randomProg = [];
 // get a random root note to show up
 function getRandomKey (){
     let randomKey = chordsOfKey[Math.floor(Math.random() * chordsOfKey.length)]
-    return(randomKey)
+    document.getElementById("key").innerHTML = `Key of: ${randomKey.root}`;
+    document.getElementById("chords").innerHTML = `Chords: ${randomKey.chords}`;  
 }
 
 // gets a random progression from the five most common
