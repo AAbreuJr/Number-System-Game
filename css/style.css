@@ -7,14 +7,13 @@ body {
     color: white;
   }
 
-h1 {
+h1, h2 {
     text-align: center;
 }
 
 ul {
     font-size: 30px;
     list-style-type: none;
-    text-align: center;
 }
 
 #newKey {
@@ -25,12 +24,11 @@ ul {
     padding: 1px;
 }
 
-#newChords {
-    padding: 1px;
-}
+
 
 button {
-    
+    display: flex;
+
 }
 
   

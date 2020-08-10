@@ -35,19 +35,19 @@ const chordsOfKey = [
 //PROGRESSIONS
 const progressionArray = [
 {
-    progression1564: ["1", "5", "6", "4"],
+    progression: ["1", "5", "6", "4"],
 },
 {
-    progression6251: ["6", "2", "5", "1"],
+    progression: ["6", "2", "5", "1"],
 },
 {
-    progression6415: ["6", "4", "1", "5"],
+    progression: ["6", "4", "1", "5"],
 },
 {
-    progression1465: ["1", "4", "6", "5"],
+    progression: ["1", "4", "6", "5"],
 },
 {
-    progression1364: ["1", "3", "6", "4"],
+    progression: ["1", "3", "6", "4"],
 }
 ];
 
@@ -82,14 +82,15 @@ const resetBtn = document.getElementById("resetBtn");
 function getRandomKey (evt){
     let randomKey = chordsOfKey[Math.floor(Math.random() * chordsOfKey.length)]
     document.getElementById("newKey").innerHTML = `${randomKey.root}`;
-    document.getElementById("newChords").innerHTML = `${randomKey.chords}`;
-    return randomKey;  
+    // document.getElementById("newChords").innerHTML = `${randomKey.chords}`;
+    return {randomKey};  
 }
 
 // gets a random progression from the five most common
 function getRandomProg (){
     let randomProg = progressionArray[Math.floor(Math.random() * progressionArray.length)];
-    document.getElementById("progression").innerHTML = `Progression: ${randomProg}`;
+    document.getElementById("newProgression").innerHTML = `${randomProg.progression}`;
+    return {randomProg};
 }
 
 //reset the screen
