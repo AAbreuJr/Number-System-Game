@@ -63,26 +63,34 @@ let randomProg = [];
 /*------Cached Element References------*/
 
 // You might choose to put your game status here
-const resetBtn = document.getElementById("resetBtn");
+const resetButton = document.getElementById("resetBtn");
+const submitButton = document.getElementById("submitBtn");
 
 /*------Event Listeners------*/
 
 // This is where you should put the event listener
 // for a mouse-click
-// document.querySelector('resetBtn').onClick getRandomKey);
+
+document.getElementById("resetBtn").addEventListener('click', reset())
 
 /*------Functions------*/
+init();
 
-// ~~get a random key from the keysArray~~
-// ~~get a random progression from the progressionArray~~
-// ~~get the correct chords that corresponds to they key~~
+//reset the screen
+function reset(){
+    init();
+}
 
+//Initialization function
+function init(){
+    getRandomKey();
+    getRandomProg();
+}
 
 // get a random root note to show up
 function getRandomKey (evt){
     let randomKey = chordsOfKey[Math.floor(Math.random() * chordsOfKey.length)]
     document.getElementById("newKey").innerHTML = `${randomKey.root}`;
-    // document.getElementById("newChords").innerHTML = `${randomKey.chords}`;
     return {randomKey};  
 }
 
@@ -93,7 +101,12 @@ function getRandomProg (){
     return {randomProg};
 }
 
-//reset the screen
+// document.getElementById("newChords").innerHTML = `${randomKey.chords}`;
+
+
+// ~~get a random key from the keysArray~~
+// ~~get a random progression from the progressionArray~~
+// ~~get the correct chords that corresponds to they key~~
 
 
 
