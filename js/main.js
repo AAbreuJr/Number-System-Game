@@ -83,7 +83,7 @@ document.getElementById('resetBtn').addEventListener('click', reset);
 /*------Functions------*/
 init();
 
-//reset the screenvto get new Key and Progression
+//reset the screen to get new Key and Progression
 function reset(){
     init();
 }
