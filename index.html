@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <script defer src="js/main.js"></script>
+    <script defer src="js/start.js"></script>
 </head>
 
 <body>
@@ -23,16 +24,43 @@
         <div class="box"></div>
         <div class="box"></div>
         <div class="box"></div>
-        <button id="submitBtn" class="btn btn-success">SUBMIT</button>
         <div class="box"></div>
     </div>
         
-    <div class= "root-chords">
-        <div id= "key">Key of:</div>
-        <div id="chords">Chords:</div>
+    <div class= "game-info">
+        <ul id= "gameList">
+            <li id= "key">Key of:</li>
+            <li id= "newKey"></li>
+            <li id="chords">Chords:</li>
+            <li id= "newChords"></li>
+            <li id="progression">Progression:</li>
+            <li id= "newProgression"></li>
+        </ul>
     </div>
 
-    <button id="resetBtn"class="btn btn-danger">RESET</button>
+    <div class="buttons">
+        <button id="submitBtn" class="btn btn-success">SUBMIT</button>
+        <button id="resetBtn" class="btn btn-danger">RESET</button>
+    </div>
+    
+
+    <div class="muzieknootjes">
+        <div class="noot-1">
+        &#9835; &#9833;
+      </div>
+      <div class="noot-2">
+        &#9833;
+      </div>
+      <div class="noot-3">
+        &#9839; &#9834;
+      </div>
+      <div class="noot-4">
+        &#9834;
+      </div>
+      </div>
+      
+
+    
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>

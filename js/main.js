@@ -63,13 +63,13 @@ let randomProg = [];
 /*------Cached Element References------*/
 
 // You might choose to put your game status here
-
+const resetBtn = document.getElementById("resetBtn");
 
 /*------Event Listeners------*/
 
 // This is where you should put the event listener
 // for a mouse-click
-
+// document.querySelector('resetBtn').onClick getRandomKey);
 
 /*------Functions------*/
 
@@ -79,17 +79,21 @@ let randomProg = [];
 
 
 // get a random root note to show up
-function getRandomKey (){
+function getRandomKey (evt){
     let randomKey = chordsOfKey[Math.floor(Math.random() * chordsOfKey.length)]
-    document.getElementById("key").innerHTML = `Key of: ${randomKey.root}`;
-    document.getElementById("chords").innerHTML = `Chords: ${randomKey.chords}`;  
+    document.getElementById("newKey").innerHTML = `${randomKey.root}`;
+    document.getElementById("newChords").innerHTML = `${randomKey.chords}`;
+    return randomKey;  
 }
 
 // gets a random progression from the five most common
 function getRandomProg (){
     let randomProg = progressionArray[Math.floor(Math.random() * progressionArray.length)];
-    return randomProg;
+    document.getElementById("progression").innerHTML = `Progression: ${randomProg}`;
 }
+
+//reset the screen
+
 
 
 
