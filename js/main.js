@@ -76,6 +76,7 @@ const submitButton = document.getElementById("submitBtn");
 // This is where you should put the event listener
 // for a mouse-click
 
+document.getElementById('startScreen').addEventListener('click', start);
 document.getElementById('resetBtn').addEventListener('click', reset);
 document.getElementById('submitBtn').addEventListener('click', isRight);
 
@@ -84,6 +85,11 @@ init();
 
 //reset the screenvto get new Key and Progression
 function reset(){
+    init();
+}
+
+//start screen
+function start(){
     init();
 }
 
