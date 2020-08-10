@@ -1,27 +1,5 @@
 /*------Constants------*/
 
-// KEYS ARRAY
-const keysArray = ["A", "B", "C", "D", "E", "F", "G"];
-
-//PROGRESSIONS
-const progressionArray = [
-{
-    progression1564: ["1", "5", "6", "4"],
-},
-{
-    progression6251: ["6", "2", "5", "1"],
-},
-{
-    progression6415: ["6", "4", "1", "5"],
-},
-{
-    progression1465: ["1", "4", "6", "5"],
-},
-{
-    progression1364: ["1", "3", "6", "4"],
-}
-];
-
 // CHORDS FOR EACH KEY
 const chordsOfKey = [
 {
@@ -54,6 +32,26 @@ const chordsOfKey = [
 },
 ]
 
+//PROGRESSIONS
+const progressionArray = [
+{
+    progression1564: ["1", "5", "6", "4"],
+},
+{
+    progression6251: ["6", "2", "5", "1"],
+},
+{
+    progression6415: ["6", "4", "1", "5"],
+},
+{
+    progression1465: ["1", "4", "6", "5"],
+},
+{
+    progression1364: ["1", "3", "6", "4"],
+}
+];
+
+
 /*------Variables (state)------*/
 
 // Variables might include (board/turn/winner)
@@ -77,11 +75,13 @@ let randomProg = [];
 
 // ~~get a random key from the keysArray~~
 // ~~get a random progression from the progressionArray~~
-// get the correct chords that corresponds to they key
+// ~~get the correct chords that corresponds to they key~~
 
+
+// get a random root note to show up
 function getRandomKey (){
-    let randomKey = keysArray[Math.floor(Math.random() * keysArray.length)]
-    return randomKey
+    let randomKey = chordsOfKey[Math.floor(Math.random() * chordsOfKey.length)]
+    return(randomKey)
 }
 
 // gets a random progression from the five most common
@@ -89,14 +89,6 @@ function getRandomProg (){
     let randomProg = progressionArray[Math.floor(Math.random() * progressionArray.length)];
     return randomProg;
 }
-
-// takes the random key and takes the corresponding chords and outputs it be able to press
-function getChords (){
-    // take the random generated randomKey string and compare to the chordsOfKey[i].root
-    
-    // if true return chordsOfKey[i].chords
-}
-
 
 
 
