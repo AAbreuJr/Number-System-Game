@@ -33,6 +33,7 @@ const chordsOfKey = [
 ]
 
 //PROGRESSIONS
+//PROGRESSION ANSWERS FOR EACH KEY
 const progressionArray = [
 {
     progression: ["1", "5", "6", "4"],
@@ -50,6 +51,9 @@ const progressionArray = [
     progression: ["1", "3", "6", "4"],
 }
 ];
+
+//PROGRESSION ANSWERS FOR EACH KEY
+
 
 
 /*------Variables (state)------*/
@@ -71,23 +75,27 @@ const submitButton = document.getElementById("submitBtn");
 // This is where you should put the event listener
 // for a mouse-click
 
-document.getElementById("resetBtn").addEventListener('click', reset())
+document.getElementById('resetBtn').addEventListener('click', reset);
+document.getElementById('submitBtn').addEventListener('click', isRight);
 
 /*------Functions------*/
 init();
 
-//reset the screen
+//reset the screenvto get new Key and Progression
 function reset(){
     init();
 }
 
-//Initialization function
+// Initialization function:
+// Where you set your initial state, setting up 
+// what the screen will look like upon loading
 function init(){
     getRandomKey();
     getRandomProg();
+    // render();
 }
 
-// get a random root note to show up
+// gets a random root note to show up
 function getRandomKey (evt){
     let randomKey = chordsOfKey[Math.floor(Math.random() * chordsOfKey.length)]
     document.getElementById("newKey").innerHTML = `${randomKey.root}`;
@@ -95,35 +103,29 @@ function getRandomKey (evt){
 }
 
 // gets a random progression from the five most common
-function getRandomProg (){
+function getRandomProg (evt){
     let randomProg = progressionArray[Math.floor(Math.random() * progressionArray.length)];
     document.getElementById("newProgression").innerHTML = `${randomProg.progression}`;
     return {randomProg};
 }
 
-// document.getElementById("newChords").innerHTML = `${randomKey.chords}`;
-
-
-// ~~get a random key from the keysArray~~
-// ~~get a random progression from the progressionArray~~
-// ~~get the correct chords that corresponds to they key~~
-
-
-
-
-// Initialization function:
-// Where you set your initial state, setting up 
-// what the board will look like upon loading
-
-// On-Click function:
-// Set up what happens when one of the elements
-// is clicked
+// 
 
 
 // Check winner function:
 // Checks the current state of the board for
 // a winner and changes the state of the winner
 // variable if so
+
+
+
+
+// On-Click function:
+// Set up what happens when one of the elements
+// is clicked
+
+
+
 
 
 
