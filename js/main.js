@@ -76,9 +76,9 @@ const submitButton = document.getElementById("submitBtn");
 // This is where you should put the event listener
 // for a mouse-click
 
-document.getElementById('startScreen').addEventListener('click', start);
+// document.getElementById('startScreen').addEventListener('click', start);
 document.getElementById('resetBtn').addEventListener('click', reset);
-document.getElementById('submitBtn').addEventListener('click', isRight);
+// document.getElementById('submitBtn').addEventListener('click', isRight);
 
 /*------Functions------*/
 init();
