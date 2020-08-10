@@ -55,6 +55,7 @@ const progressionArray = [
 //PROGRESSION ANSWERS FOR EACH KEY
 
 
+// if chordsOfKey.root === "A" && progressionArray[0] 
 
 /*------Variables (state)------*/
 
@@ -109,25 +110,9 @@ function getRandomProg (evt){
     return {randomProg};
 }
 
-// 
-
 
 // Check winner function:
 // Checks the current state of the board for
-// a winner and changes the state of the winner
-// variable if so
-
-
-
-
-// On-Click function:
-// Set up what happens when one of the elements
-// is clicked
-
-
-
-
-
 
 // Render function:
 // Displays the current state of the board

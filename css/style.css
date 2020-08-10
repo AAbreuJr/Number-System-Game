@@ -7,6 +7,23 @@ body {
     color: white;
   }
 
+  nav {
+    display: flex;
+    height: 80px;
+    background: #a2cbb6;
+    font-size: 40px;
+    margin: auto 10px;
+
+  }
+
+  footer {
+    display: flex;
+    height: 80px;
+    background: #a2cbb6;
+    font-size: 40px;
+    margin: 30px 10px;
+  }
+
 h1, h2 {
     text-align: center;
 }
@@ -55,6 +72,7 @@ button {
   
   .noot-1 {
     top: 60px;
+    bottom:
     left: 0;
     animation-delay: 0.5s;
   }
