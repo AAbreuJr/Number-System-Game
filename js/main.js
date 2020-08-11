@@ -35,25 +35,56 @@ const chordsOfKey = [
 //PROGRESSIONS
 const progressionArray = [
 {
-    progression: ["1", "5", "6", "4"],
+    progression:["1", "5", "6", "4"],
+    answerForA: ["A", "E", "F#m", "D"],
+    answerForB: ["B", "F#", "G#m", "E"],
+    answerForC: ["C", "G", "Am", "F"],
+    answerForD: ["D", "A", "Bm", "G"],
+    answerForE: ["E", "B", "C#m", "A"],
+    answerForF: ["F", "C", "Dm", "Bb"],
+    answerForG: ["G", "D", "Em", "C"],
 },
 {
     progression: ["6", "2", "5", "1"],
+    answerForA: ["F#m", "Bm", "E", "A"],
+    answerForB: ["G#m", "C#m", "F#", "B"],
+    answerForC: ["Am", "Dm", "G", "C"],
+    answerForD: ["Bm", "Em", "A", "D"],
+    answerForE: ["C#m", "F#m", "B", "E"],
+    answerForF: ["Dm", "Gm", "C", "F"],
+    answerForG: ["Em", "Am", "D", "G"],
 },
 {
     progression: ["6", "4", "1", "5"],
+    answerForA: ["F#m", "D", "A", "E"],
+    answerForB: ["G#m", "E", "B", "F#"],
+    answerForC: ["Am", "F", "C", "G"],
+    answerForD: ["Bm", "G", "D", "A"],
+    answerForE: ["C#m", "A", "E", "B"],
+    answerForF: ["Dm", "Bb", "F", "C"],
+    answerForG: ["Em", "C", "G", "D"],
 },
 {
     progression: ["1", "4", "6", "5"],
+    answerForA: ["A", "D", "F#M", "E"],
+    answerForB: ["B", "E", "G#m", "F#"],
+    answerForC: ["C", "F", "Am", "G"],
+    answerForD: ["D", "G", "Bm", "A"],
+    answerForE: ["E", "A", "C#m", "B"],
+    answerForF: ["F", "Bb", "Dm", "C"],
+    answerForG: ["G", "C", "Em", "D"],
 },
 {
     progression: ["1", "3", "6", "4"],
+    answerForA: ["A", "C#m", "F#m", "D"],
+    answerForB: ["B", "D#m", "G#m", "E"],
+    answerForC: ["C", "Em", "Am", "F"],
+    answerForD: ["D", "F#m", "Bm", "G"],
+    answerForE: ["E", "G#m", "C#m", "A"],
+    answerForF: ["F", "Am", "Dm", "Bb"],
+    answerForG: ["G", "Bm", "Em", "C"],
 }
 ];
-
-//PROGRESSION ANSWERS FOR EACH KEY
-
-
 
 /*------Variables (state)------*/
 
@@ -126,9 +157,7 @@ function getRandomProg (evt){
 
 // Check winner function:
 // Checks the current state of the board for
-// function chordCheck(){
-//     if
-// }
+function game(){}
 
 // Render function:
 // Displays the current state of the board
