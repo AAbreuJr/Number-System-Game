@@ -4,36 +4,35 @@
 const chordsOfKey = [
 {
     root: "A",
-    chords: ["A", "Bm", "C#m", "D", "E", "F#m", "G#"],    
+    // chords: ["A", "Bm", "C#m", "D", "E", "F#m", "G#"],    
 },
 {
     root: "B",
-    chords: ["B", "C#m", "D#m", "E", "F#", "G#m", "A#"],
+    // chords: ["B", "C#m", "D#m", "E", "F#", "G#m", "A#"],
 },
 {
     root: "C",
-    chords: ["C", "Dm", "Em", "F", "G", "Am", "B"],
+    // chords: ["C", "Dm", "Em", "F", "G", "Am", "B"],
 },
 {
     root: "D",
-    chords: ["D", "Em", "F#m", "G#m", "G", "Bm", "C#"],
+    // chords: ["D", "Em", "F#m", "G#m", "G", "Bm", "C#"],
 },
 {
     root: "E",
-    chords: ["E", "F#m", "G#m", "A", "B", "C#m", "D#"],
+    // chords: ["E", "F#m", "G#m", "A", "B", "C#m", "D#"],
 },
 {
     root: "F",
-    chords: ["F", "Gm", "Am", "Bb", "C", "Dm", "E"],
+    // chords: ["F", "Gm", "Am", "Bb", "C", "Dm", "E"],
 },
 {
     root: "G",
-    chords: ["G", "Am", "Bm", "C", "D", "Em", "F#"],
+    // chords: ["G", "Am", "Bm", "C", "D", "Em", "F#"],
 },
 ]
 
 //PROGRESSIONS
-//PROGRESSION ANSWERS FOR EACH KEY
 const progressionArray = [
 {
     progression: ["1", "5", "6", "4"],
@@ -55,6 +54,7 @@ const progressionArray = [
 //PROGRESSION ANSWERS FOR EACH KEY
 
 
+
 /*------Variables (state)------*/
 
 // Variables might include (board/turn/winner)
@@ -69,10 +69,11 @@ let input;
 // You might choose to put your game status here
 const resetButton = document.getElementById('resetBtn');
 const submitButton = document.getElementById('submitBtn');
-const firstAns = document.getElementById('firstAnswer');
-const secondAns = document.getElementById('secondAnswer');
-const thirdAns = document.getElementById('thirdAnswer');
-const fourthAns = document.getElementById('fourthAnswer');
+const gameCheck = document.getElementById('rightOrWrong');
+let firstAns = document.getElementById('firstAnswer');
+let secondAns = document.getElementById('secondAnswer');
+let thirdAns = document.getElementById('thirdAnswer');
+let fourthAns = document.getElementById('fourthAnswer');
 
 /*------Event Listeners------*/
 
@@ -81,7 +82,7 @@ const fourthAns = document.getElementById('fourthAnswer');
 
 // document.getElementById('startScreen').addEventListener('click', start);
 document.getElementById('resetBtn').addEventListener('click', reset);
-// document.getElementById('submitBtn').addEventListener('click', isRight);
+// document.getElementById('submitBtn').addEventListener('click', chordCheck);
 
 /*------Functions------*/
 init();
@@ -102,10 +103,10 @@ function start(){
 function init(){
     getRandomKey();
     getRandomProg();
-    document.getElementById('firstAnswer').value = '';
-    document.getElementById('secondAnswer').value = '';
-    document.getElementById('thirdAnswer').value = '';
-    document.getElementById('fourthAnswer').value = '';
+    firstAns.value = '';
+    secondAns.value = '';
+    thirdAns.value = '';
+    fourthAns.value = '';
 }
 
 // gets a random root note to show up
@@ -125,8 +126,9 @@ function getRandomProg (evt){
 
 // Check winner function:
 // Checks the current state of the board for
-// function isRight (){
-    //Key of A 
+// function chordCheck(){
+//     if
+// }
 
 // Render function:
 // Displays the current state of the board
