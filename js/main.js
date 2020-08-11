@@ -69,6 +69,10 @@ let input;
 // You might choose to put your game status here
 const resetButton = document.getElementById('resetBtn');
 const submitButton = document.getElementById('submitBtn');
+const firstAns = document.getElementById('firstAnswer');
+const secondAns = document.getElementById('secondAnswer');
+const thirdAns = document.getElementById('thirdAnswer');
+const fourthAns = document.getElementById('fourthAnswer');
 
 /*------Event Listeners------*/
 
@@ -121,8 +125,8 @@ function getRandomProg (evt){
 
 // Check winner function:
 // Checks the current state of the board for
-
-
+// function isRight (){
+    //Key of A 
 
 // Render function:
 // Displays the current state of the board
