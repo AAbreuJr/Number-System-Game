@@ -62,6 +62,7 @@ const progressionArray = [
 let randomKey = [];
 let chords = [];
 let randomProg = [];
+let input;
 
 /*------Cached Element References------*/
 
@@ -97,7 +98,10 @@ function start(){
 function init(){
     getRandomKey();
     getRandomProg();
-    // render();
+    document.getElementById('firstAnswer').value = '';
+    document.getElementById('secondAnswer').value = '';
+    document.getElementById('thirdAnswer').value = '';
+    document.getElementById('fourthAnswer').value = '';
 }
 
 // gets a random root note to show up
