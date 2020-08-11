@@ -1,153 +1,82 @@
-html {
-    box-sizing: border-box
-  }
- 
-  *, 
-  *::before, 
-  *::after {
-    box-sizing: inherit;
-  }
-
- :root {
-    font-size: 62.5%
- }
-  
-  body {
-    background-color: gray;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-      Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-    justify-content: center;
-    color: whitesmoke;
-    display: grid;
-    font-size: 3.4rem;
-    font-weight: bold;
-    height: 100vh;
-    grid-template-columns: repeat(2fr 2fr 2fr);
-    grid-template-rows: 50px auto 400px 100px;
-    grid-template-areas: 
-      "header"
-      "left"
-      "content"
-      "right"
-      "footer";
-  }
-
-  header {
-    grid-area: header;
-    background-color: #2F4858;
-    grid-column: col-start 6 / span 6fr
-  }
-  
-  footer {
-    background-color: #5AB7D4;
-    color: whitesmoke;
-    grid-area: footer;
-  }
-
-  ul {
-      text-align: center;
-  }
-  
-#left{
-    background-color: #C2F9FF;
-    color: #3c4856;
-    grid-area: left;
-  }
-
-#right {
-    background-color: #C2F9FF;
-    color: #3c4856;
-    grid-area: right;
-  }
-  
-  main {
-    width: 550px;
-    height: 450px;
-    margin: 0 auto;
-    grid-area: content;
-    background-color: tomato;
+html, body {
+  height: 100%;
+  font-family: helvetica;
+  margin: 0;
 }
 
-  
-#userAnswer {
-    width: 5px;
-    height: 5px;
-}
-  header,
-  #left,
-  footer,
-  #right,
-  main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+h1 {
+  font-size: 60px;
+  margin-top: 0;
+  animation: bounce;
+  animation-duration: 2s;
+}  
 
-  .btn-success {
-      font-size: 15px;
-      height: 40px;
-      width: 75px;
-  }
+body {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: linear-gradient(to right top, #00e3ff, #25d9ff, #42ceff, #5bc3fc, #70b7f5, #6ebaf6, #6bbcf7, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
 
-  .btn-danger {
-    font-size: 15px;
-    height: 40px;
-    width: 75px;
-  }
-
-  .first-chord {
-      display: inline-block;
-      
-      font-size: 20px;
-      float: left;
-      height: 50px;
-      text-align: center;
-      width: 50px;
-  }
-
-  .sec-chord {
-    display: inline-block;
-    font-size: 20px;
-    float: left;
-    height: 50px;
-    text-align: center;
-    width: 50px;
 }
 
-.third-chord {
-    display: inline-block;
-    font-size: 20px;
-    float: left;
-    height: 50px;
-    text-align: center;
-    width: 50px;
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.fourth-chord {
-    display: inline-block;
-    font-size: 20px;
-    float: left;
-    height: 50px;
-    text-align: center;
-    width: 50px;
+input {
+  vertical-align: middle;
+  font-size: 40px;
+  border: 4px solid darkgrey;
+  width: 100px;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  animation: zoomIn;
+  animation-duration: 2s;
 }
 
+button {
+  text-align: center;
+  height: 80px;
+  width: 80px;
+  font-size: 40px;
+  color: white;
+  background-color: darkgrey;
+  margin: 20px;
+  border-radius: 8px;
+  animation: jackInTheBox;
+  animation-duration: 2s;
+}
 
+button:hover {
+  color: green;
+  background-color: white;
+}
 
-  @media only screen and (min-width: 768px) {
-    body {
-      grid-template-columns: 1fr 6fr 1fr;
-      grid-template-rows: 50px auto 50px;
-      grid-template-areas: 
-        "header header header"
-        "left content right"
-        "footer footer footer";
-    
-    }
-  }
+.game-info {
+  text-align: center;
+  justify-content: center;
+  font-size: 50px ;
+}
 
-  @media only screen and (min-width: 1024px) {   
-        header,
-        footer,
-        aside
-  }  
+#submitBtn {
+  font-size: 15px;
+}
+
+#left-image {
+  font-size: 45px;
+  position: fixed;
+  bottom: 500px;
+  left: 80px;
+  justify-content: center;
+}
+
+#right-image {
+  font-size: 45px;
+  position: fixed;
+  bottom: 500px;
+  right: 80px;
+  justify-content: center;
+}

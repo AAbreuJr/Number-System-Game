@@ -5,41 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nashville Number System</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
     <link rel="stylesheet" href="css/style.css">
-    <script defer src="js/main.js"></script>
-    
+    <script defer src="js/main.js"></script>  
 </head>
-
-<body>
-    <header>NASHVILLE NUMBER SYSTEM</header>
-    
-    <main>
-        <ul>
-            <div id= "key">Key of:</div> 
-            <div id= "newKey"></div> 
-            <div id="progression">Progression:</div>
-            <div id= "newProgression"></div>
-            <div id="answer">Your Answer:</div>
-            <div><input id="firstAnswer" class="first-chord"></input></div>
-            <div></div><input id="secondAnswer" class="sec-chord"></input></div>
-            <div><input id="thirdAnswer" class="third-chord"></input></div>
-            <div><input id="fourthAnswer" class="fourth-chord"></input></div>
-            <div><button id="submitBtn" class="btn btn-success">SUBMIT</button></div>            
-            <div><button id="resetBtn" class="btn btn-danger">RESET</button></div>
-        </ul>
-    </main>
-    <aside id= "left">Left Side Image
-    
-</aside>
-      
-    <aside id="right">Right Side Image</aside>
-    <footer>
-    </footer>
+<body class='flex'>
+    <header></header>
+    <section>
+            <h1>NASHVILLE NUMBER SYSTEM</h1>
+        <div class= 'game-info'>
+            <div id= 'key'>Key of:</div> 
+            <div id= 'newKey'></div> 
+            <div id='progression'>Progression:</div>
+            <div id= 'newProgression'></div>
+            <div id='answer'>Your Answer:</div>
+        </div>
+    </section>
+    <section>
+            <input id='firstAnswer' class='first-chord'>
+            <input id='secondAnswer' class='sec-chord'>
+            <input id='thirdAnswer' class='third-chord'>
+            <input id='fourthAnswer' class='fourth-chord'>
+    </section>
+    <section>
+            <button id='submitBtn' class='btn btn-success'>SUBMIT</button>            
+            <button id='resetBtn' class='btn btn-danger'>RESET</button>
+    </section>
+    <section>
+    <div id='left-image'>Left Side Image</div>
+    <div id='right-image'>Right Side Image</div>
+    </section>
+    <footer></footer>
 </body>
-      
-
-    
-
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>

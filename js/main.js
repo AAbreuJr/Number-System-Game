@@ -55,8 +55,6 @@ const progressionArray = [
 //PROGRESSION ANSWERS FOR EACH KEY
 
 
-// if chordsOfKey.root === "A" && progressionArray[0] 
-
 /*------Variables (state)------*/
 
 // Variables might include (board/turn/winner)
@@ -68,8 +66,8 @@ let randomProg = [];
 /*------Cached Element References------*/
 
 // You might choose to put your game status here
-const resetButton = document.getElementById("resetBtn");
-const submitButton = document.getElementById("submitBtn");
+const resetButton = document.getElementById('resetBtn');
+const submitButton = document.getElementById('submitBtn');
 
 /*------Event Listeners------*/
 
@@ -105,14 +103,14 @@ function init(){
 // gets a random root note to show up
 function getRandomKey (evt){
     let randomKey = chordsOfKey[Math.floor(Math.random() * chordsOfKey.length)]
-    document.getElementById("newKey").innerHTML = `${randomKey.root}`;
+    document.getElementById('newKey').innerHTML = `${randomKey.root}`;
     return {randomKey};  
 }
 
 // gets a random progression from the five most common
 function getRandomProg (evt){
     let randomProg = progressionArray[Math.floor(Math.random() * progressionArray.length)];
-    document.getElementById("newProgression").innerHTML = `${randomProg.progression}`;
+    document.getElementById('newProgression').innerHTML = `${randomProg.progression}`;
     return {randomProg};
 }
 
