@@ -1,8 +1,5 @@
 /*------Constants------*/
 
-// ARRAY OF ALL THE KEYS
-const keyArray = ['A', 'B', 'C', 'D', 'E', 'F', 'G'];
-
 // CHORDS FOR EACH KEY
 const chordsOfKey = [
 {
