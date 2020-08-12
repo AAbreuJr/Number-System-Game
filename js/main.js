@@ -44,6 +44,8 @@ const secondAns = document.getElementById('userInput2').value;
 const thirdAns = document.getElementById('userInput3').value;
 const fourthAns = document.getElementById('userInput4').value;
 
+// audio files
+
 /*------Event Listeners------*/
 
 // This is where you should put the event listener
@@ -72,6 +74,12 @@ function init(){
     userInput4.value = '';
 }
 
+//audio function
+const tada = new Audio('/audio/tada.wav')
+function playTada(){
+    setTimeout(()=> {tada.play()}, 100)
+}
+
 // gets a random root note to show up
 function getRandomKey (evt){
     let randomKey = keysArray[Math.floor(Math.random() * keysArray.length)]
@@ -97,23 +105,22 @@ function isRight(){
     && userInput3.value === "F#m" || "Gbm" 
     && userInput4.value === "D") {
         console.log (`Nice One`)
-    
-    
+     
    //key of A progression 2 | 6-2-5-1
     } else if (randomProg === progressionArray[1] 
     && userInput1.value === "F#m" || "Gbm" 
     && userInput2.value === "Bm" 
     && userInput3.value === "E" 
     && userInput4.value === "A") {
-        console.log (`Nice One 2`)
+        console.log (`Nice One 2`, playTada())
          
    //key of A progression 3 | 6-4-1-5
     } else if (randomProg === progressionArray[2]
     && userInput1.value === "F#m" || "Gbm"
-    && userInput2.value === "Bm"
-    && userInput3.value === "E"
-    && userInput4.value === "A") {
-        console.log (`Nice One 3`)
+    && userInput2.value === "D"
+    && userInput3.value === "A"
+    && userInput4.value === "E") {
+        console.log (`Nice One 3`, playTada())
     
     // key of A progression 4 | 1-4-6-5
     } else if (randomProg === progressionArray[3]
@@ -121,7 +128,7 @@ function isRight(){
     && userInput2.value === "D"
     && userInput3.value === "F#m"
     && userInput4.value === "E") {
-        console.log (`Nice One 4`)
+        console.log (`Nice One 4`, playTada())
 
     // key of A progression 5 | 1-3-6-4
     } else if (randomProg === progressionArray[4]
@@ -129,7 +136,7 @@ function isRight(){
         && userInput2.value === "D"
         && userInput3.value === "F#m"
         && userInput4.value === "E") {
-            console.log (`Nice One 5`)
+            console.log (`Nice One 5`, playTada())
     } else {
         console.log (`Try again`);
     }
