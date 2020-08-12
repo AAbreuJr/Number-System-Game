@@ -330,7 +330,7 @@ function isRight(){
         && userInput4.value === "A#" || "Bb") {
             console.log (`Nice One 6.1`, playTada())
      
-    //key of E progression 2 | 6-2-5-1
+    //key of F progression 2 | 6-2-5-1
     } else if (randomProg === progressionArray[1]
         && randomKey === "F"  
         && userInput1.value === "Dm" 
@@ -339,7 +339,7 @@ function isRight(){
         && userInput4.value === "F") {
             console.log (`Nice One 6.2`, playTada())
          
-    //key of E progression 3 | 6-4-1-5
+    //key of F progression 3 | 6-4-1-5
     } else if (randomProg === progressionArray[2]
         && randomKey === "F" 
         && userInput1.value === "Dm"
@@ -348,7 +348,7 @@ function isRight(){
         && userInput4.value === "C") {
             console.log (`Nice One 6.3`, playTada())
     
-    // key of E progression 4 | 1-4-6-5
+    // key of F progression 4 | 1-4-6-5
     } else if (randomProg === progressionArray[3]
         && randomKey === "F"
         && userInput1.value === "F"
@@ -357,7 +357,7 @@ function isRight(){
         && userInput4.value === "C") {
             console.log (`Nice One 6.4`, playTada())
     
-    // key of E progression 5 | 1-3-6-4
+    // key of F progression 5 | 1-3-6-4
     } else if (randomProg === progressionArray[4]
         && randomKey === "F"
         && userInput1.value === "F"
