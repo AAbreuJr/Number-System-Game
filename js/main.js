@@ -123,14 +123,16 @@ function isRight(){
     && userInput4.value === "E") {
         console.log (`Nice One 4`)
 
-    // key of A progression 5 | 
-    } else if (randomProg === progressionArray[3]
+    // key of A progression 5 | 1-3-6-4
+    } else if (randomProg === progressionArray[4]
         && userInput1.value === "A"
         && userInput2.value === "D"
         && userInput3.value === "F#m"
         && userInput4.value === "E") {
-            console.log (`Nice One 4`)
-}
+            console.log (`Nice One 5`)
+    } else {
+        console.log (`Try again`);
+    }
 }
 
 // Render function:
