@@ -31,7 +31,6 @@ let chords = [];
 let randomProg = [];
 let input;
 let winner;
-let tryAgain;
 
 /*------Cached Element References------*/
 
@@ -61,6 +60,13 @@ init();
 //reset the screen to get new Key and Progression
 function reset(){
     init();
+}
+
+function tryAgain(){
+    userInput1.value = '';
+    userInput2.value = '';
+    userInput3.value = '';
+    userInput4.value = '';
 }
 
 // Initialization function: 
@@ -94,19 +100,62 @@ function getRandomProg (evt){
     return {randomProg};
 }
 
-
-// Check winner function:
-// Checks the current state of the board for
 function isRight(){
     //keyofA progression 1 | 1-5-6-4
-    if (randomProg === progressionArray[0] 
+    if (randomProg === progressionArray[0]
+    && randomKey === "A" 
     && userInput1.value === "A" 
     && userInput2.value === "E" 
     && userInput3.value === "F#m" || "Gbm" 
     && userInput4.value === "D") {
-        console.log (`Nice One`)
+        console.log (`Nice One`, playTada())
      
    //key of A progression 2 | 6-2-5-1
+    } else if (randomProg === progressionArray[1]
+    && randomKey === "A"  
+    && userInput1.value === "F#m" || "Gbm" 
+    && userInput2.value === "Bm" 
+    && userInput3.value === "E" 
+    && userInput4.value === "A") {
+        console.log (`Nice One 2`, playTada())
+         
+   //key of A progression 3 | 6-4-1-5
+    } else if (randomProg === progressionArray[2]
+    && randomKey === "A" 
+    && userInput1.value === "F#m" || "Gbm"
+    && userInput2.value === "D"
+    && userInput3.value === "A"
+    && userInput4.value === "E") {
+        console.log (`Nice One 3`, playTada())
+    
+    // key of A progression 4 | 1-4-6-5
+    } else if (randomProg === progressionArray[3]
+        && randomKey === "A" 
+        && userInput1.value === "A"
+        && userInput2.value === "D"
+        && userInput3.value === "F#m"
+        && userInput4.value === "E") {
+            console.log (`Nice One 4`, playTada())
+
+    // key of A progression 5 | 1-3-6-4
+    } else if (randomProg === progressionArray[4]
+        && randomKey === "A" 
+        && userInput1.value === "A"
+        && userInput2.value === "D"
+        && userInput3.value === "F#m"
+        && userInput4.value === "E") {
+            console.log (`Nice One 5`, playTada())
+
+    //key of B progression 1 | 1-5-6-4
+    } else if (randomProg === progressionArray[0] 
+        && randomKey === "B" 
+        && userInput1.value === "B" 
+        && userInput2.value === "F#" 
+        && userInput3.value === "G#m" || "Abm" 
+        && userInput4.value === "E") {
+        console.log (`Nice One`, playTada())
+     
+   //key of B progression 2 | 6-2-5-1
     } else if (randomProg === progressionArray[1] 
     && userInput1.value === "F#m" || "Gbm" 
     && userInput2.value === "Bm" 
@@ -138,12 +187,6 @@ function isRight(){
         && userInput4.value === "E") {
             console.log (`Nice One 5`, playTada())
     } else {
-        console.log (`Try again`);
+        console.log (`Try again`, tryAgain());
     }
 }
-
-// Render function:
-// Displays the current state of the board
-// on the page, updating the elements to reflect
-// either X or O depending on whose turn it is
-
