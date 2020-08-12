@@ -103,30 +103,30 @@ function getRandomProg (evt){
 function isRight(){
     //keyofA progression 1 | 1-5-6-4
     if (randomProg === progressionArray[0]
-    && randomKey === "A" 
-    && userInput1.value === "A" 
-    && userInput2.value === "E" 
-    && userInput3.value === "F#m" || "Gbm" 
-    && userInput4.value === "D") {
-        console.log (`Nice One`, playTada())
+        && randomKey === "A" 
+        && userInput1.value === "A" 
+        && userInput2.value === "E" 
+        && userInput3.value === "F#m" || "Gbm" 
+        && userInput4.value === "D") {
+            console.log (`Nice One 1.1`, playTada())
      
    //key of A progression 2 | 6-2-5-1
     } else if (randomProg === progressionArray[1]
-    && randomKey === "A"  
-    && userInput1.value === "F#m" || "Gbm" 
-    && userInput2.value === "Bm" 
-    && userInput3.value === "E" 
-    && userInput4.value === "A") {
-        console.log (`Nice One 2`, playTada())
+        && randomKey === "A"  
+        && userInput1.value === "F#m" || "Gbm" 
+        && userInput2.value === "Bm" 
+        && userInput3.value === "E" 
+        && userInput4.value === "A") {
+            console.log (`Nice One 1.2`, playTada())
          
    //key of A progression 3 | 6-4-1-5
     } else if (randomProg === progressionArray[2]
-    && randomKey === "A" 
-    && userInput1.value === "F#m" || "Gbm"
-    && userInput2.value === "D"
-    && userInput3.value === "A"
-    && userInput4.value === "E") {
-        console.log (`Nice One 3`, playTada())
+        && randomKey === "A" 
+        && userInput1.value === "F#m" || "Gbm"
+        && userInput2.value === "D"
+        && userInput3.value === "A"
+        && userInput4.value === "E") {
+            console.log (`Nice One 1.3`, playTada())
     
     // key of A progression 4 | 1-4-6-5
     } else if (randomProg === progressionArray[3]
@@ -135,7 +135,7 @@ function isRight(){
         && userInput2.value === "D"
         && userInput3.value === "F#m"
         && userInput4.value === "E") {
-            console.log (`Nice One 4`, playTada())
+            // console.log (`Nice One 1.4`, playTada())
 
     // key of A progression 5 | 1-3-6-4
     } else if (randomProg === progressionArray[4]
@@ -144,7 +144,7 @@ function isRight(){
         && userInput2.value === "D"
         && userInput3.value === "F#m"
         && userInput4.value === "E") {
-            console.log (`Nice One 5`, playTada())
+            // console.log (`Nice One 1.5`, playTada())
 
     //key of B progression 1 | 1-5-6-4
     } else if (randomProg === progressionArray[0] 
@@ -153,39 +153,40 @@ function isRight(){
         && userInput2.value === "F#" 
         && userInput3.value === "G#m" || "Abm" 
         && userInput4.value === "E") {
-        console.log (`Nice One`, playTada())
+        // console.log (`Nice One 2.1`, playTada())
      
    //key of B progression 2 | 6-2-5-1
     } else if (randomProg === progressionArray[1] 
-    && userInput1.value === "F#m" || "Gbm" 
-    && userInput2.value === "Bm" 
-    && userInput3.value === "E" 
-    && userInput4.value === "A") {
-        console.log (`Nice One 2`, playTada())
+        && userInput1.value === "G#m" || "Gbm" 
+        && userInput2.value === "C#m" 
+        && userInput3.value === "F#" 
+        && userInput4.value === "B") {
+        // console.log (`Nice One 2.2`, playTada())
          
-   //key of A progression 3 | 6-4-1-5
+   //key of B progression 3 | 6-4-1-5
     } else if (randomProg === progressionArray[2]
-    && userInput1.value === "F#m" || "Gbm"
-    && userInput2.value === "D"
-    && userInput3.value === "A"
-    && userInput4.value === "E") {
-        console.log (`Nice One 3`, playTada())
+        && userInput1.value === "G#m" || "Gbm"
+        && userInput2.value === "E"
+        && userInput3.value === "B"
+        && userInput4.value === "F#") {
+        // console.log (`Nice One 2.3`, playTada())
     
-    // key of A progression 4 | 1-4-6-5
+    // key of B progression 4 | 1-4-6-5
     } else if (randomProg === progressionArray[3]
-    && userInput1.value === "A"
-    && userInput2.value === "D"
-    && userInput3.value === "F#m"
-    && userInput4.value === "E") {
-        console.log (`Nice One 4`, playTada())
+        && userInput1.value === "B"
+        && userInput2.value === "E"
+        && userInput3.value === "G#m"
+        && userInput4.value === "F#") {
+        // console.log (`Nice One 2.4`, playTada())
 
-    // key of A progression 5 | 1-3-6-4
+    // key of B progression 5 | 1-3-6-4
     } else if (randomProg === progressionArray[4]
-        && userInput1.value === "A"
-        && userInput2.value === "D"
-        && userInput3.value === "F#m"
+        && userInput1.value === "B"
+        && userInput2.value === "D#m"
+        && userInput3.value === "G#m"
         && userInput4.value === "E") {
-            console.log (`Nice One 5`, playTada())
+            // console.log (`Nice One 2.5`, playTada())
+    
     } else {
         console.log (`Try again`, tryAgain());
     }
