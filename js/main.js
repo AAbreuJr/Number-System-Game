@@ -37,20 +37,13 @@ let winner;
 // You might choose to put your game status here
 const resetButton = document.getElementById('resetBtn');
 const submitButton = document.getElementById('submitBtn');
-const gameCheck = document.getElementById('rightOrWrong');
-const firstAns = document.getElementById('userInput1').value;
-const secondAns = document.getElementById('userInput2').value;
-const thirdAns = document.getElementById('userInput3').value;
-const fourthAns = document.getElementById('userInput4').value;
-
-// audio files
+const display = document.querySelector('bottom');
 
 /*------Event Listeners------*/
 
 // This is where you should put the event listener
 // for a mouse-click
 
-// document.getElementById('startScreen').addEventListener('click', start);
 document.getElementById('resetBtn').addEventListener('click', reset);
 document.getElementById('submitBtn').addEventListener('click', isRight);
 
@@ -62,6 +55,7 @@ function reset(){
     init();
 }
 
+// try again, when wrong
 function tryAgain(){
     userInput1.value = '';
     userInput2.value = '';
@@ -78,6 +72,7 @@ function init(){
     userInput2.value = '';
     userInput3.value = '';
     userInput4.value = '';
+    document.getElementById('bottom').innerHTML = '';
 }
 
 //audio function
@@ -107,11 +102,13 @@ function isRight(){
         && userInput1.value === "A" 
         && userInput2.value === "E" 
         && userInput3.value === "F#m" || "Gbm" 
-        && userInput4.value === "D") {
-            console.log (`Nice One 1.1`, playTada())
+        && userInput4.value === "D") 
+        { playTada();
+        return isRight;
+        
      
    //key of A progression 2 | 6-2-5-1
-    } else if (randomProg === progressionArray[1]
+        } else if (randomProg === progressionArray[1]
         && randomKey === "A"  
         && userInput1.value === "F#m" || "Gbm" 
         && userInput2.value === "Bm" 
@@ -280,7 +277,53 @@ function isRight(){
         && userInput3.value === "Bm"
         && userInput4.value === "G") {
             console.log (`Nice One 4.5`, playTada())
+
+        //key of E progression 1 | 1-5-6-4
+    } else if (randomProg === progressionArray[0] 
+        && randomKey === "E" 
+        && userInput1.value === "E" 
+        && userInput2.value === "B" 
+        && userInput3.value === "C#m" || "Dbm" 
+        && userInput4.value === "A") {
+            console.log (`Nice One 5.1`, playTada())
+ 
+    //key of E progression 2 | 6-2-5-1
+    } else if (randomProg === progressionArray[1]
+        && randomKey === "E"  
+        && userInput1.value === "C#m" || "Dbm" 
+        && userInput2.value === "F#m" 
+        && userInput3.value === "B" 
+        && userInput4.value === "E") {
+            console.log (`Nice One 5.2`, playTada())
+     
+    //key of E progression 3 | 6-4-1-5
+    } else if (randomProg === progressionArray[2]
+        && randomKey === "E" 
+        && userInput1.value === "C#m"
+        && userInput2.value === "A"
+        && userInput3.value === "E"
+        && userInput4.value === "B") {
+            console.log (`Nice One 5.3`, playTada())
+
+    // key of E progression 4 | 1-4-6-5
+    } else if (randomProg === progressionArray[3]
+        && randomKey === "E"
+        && userInput1.value === "E"
+        && userInput2.value === "A"
+        && userInput3.value === "C#m"
+        && userInput4.value === "B") {
+            console.log (`Nice One 5.4`, playTada())
+
+    // key of E progression 5 | 1-3-6-4
+    } else if (randomProg === progressionArray[4]
+        && randomKey === "E"
+        && userInput1.value === "E"
+        && userInput2.value === "G#m" || "Abm"
+        && userInput3.value === "C#m" || "Dbm"
+        && userInput4.value === "A") {
+            console.log (`Nice One 5.5`, playTada())
+    // if wrong
     } else {
-        console.log (`Try again`, tryAgain());
-    }
+        console.log(`Nice Try`, tryAgain())
+}
 }

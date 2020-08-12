@@ -80,3 +80,16 @@ button:hover {
   right: 80px;
   justify-content: center;
 }
+
+#bottom {
+  animation: zoomIn;
+  animation-duration: 2s;
+}
+
+.red {
+  color: red;
+}
+
+.green {
+  color: green;
+}
