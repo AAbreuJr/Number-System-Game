@@ -22,6 +22,39 @@ const progressionArray = [
 }
 ];
 
+//DISPLAY CORRECT
+const correctArr = [
+    {
+        bottomDisplay: 'Correct! That’s it.',
+    },
+    {
+        bottomDisplay: 'Thats spot on!',
+    },
+    {
+        bottomDisplay: 'Yes, that’s right.',
+    },
+    {
+        bottomDisplay: 'You are quite right.',
+    },
+]
+
+//DISPLAY INCORRECT
+const incorrectArr = [
+    {
+        bottomDisplay: 'Incorrect! That’s not it.',
+    },
+    {
+        bottomDisplay: 'I’m afraid that’s not quite right.',
+    },
+    {
+        bottomDisplay: 'Nope, that’s wrong.',
+    },
+    {
+        bottomDisplay: 'You are quite wrong.',
+    },
+]
+
+
 /*------Variables (state)------*/
 
 // Variables might include (board/turn/winner)
@@ -34,7 +67,7 @@ let randomProg = [];
 
 // You might choose to put your game status here
 const resetButton = document.getElementById('resetBtn');
-const display = document.querySelector('bottom');
+
 
 /*------Event Listeners------*/
 
@@ -46,6 +79,18 @@ document.getElementById('submitBtn').addEventListener('click', checkGame1);
 
 /*------Functions------*/
 init();
+
+// Initialization function: 
+// what the screen will look like upon loading
+function init(){
+    getRandomKey();
+    getRandomProg();
+    userInput1.value = '';
+    userInput2.value = '';
+    userInput3.value = '';
+    userInput4.value = '';
+    document.getElementById('bottom').innerHTML = '';
+}
 
 //reset the screen to get new Key and Progression
 function reset(){
@@ -60,22 +105,15 @@ function tryAgain(){
     userInput4.value = '';
 }
 
-// Initialization function: 
-// what the screen will look like upon loading
-function init(){
-    getRandomKey();
-    getRandomProg();
-    userInput1.value = '';
-    userInput2.value = '';
-    userInput3.value = '';
-    userInput4.value = '';
-    document.getElementById('bottom').innerHTML = '';
-}
-
 //audio function
 const tada = new Audio('/audio/tada.wav')
 function playTada(){
-    setTimeout(()=> {tada.play()}, 100)
+    tada.play();
+}
+
+const wrong = new Audio('/audio/wrong.wav')
+function playWrong(){
+    wrong.play();
 }
 
 // gets a random root note to show up
@@ -89,6 +127,19 @@ function getRandomProg (evt){
     let randomProg = progressionArray[Math.floor(Math.random() * progressionArray.length)];
     document.getElementById('newProgression').innerHTML = `${randomProg.progression}`;
 }
+
+//RANDOM PARAGRAPH AT THE BOTTOM FOR RIGHT
+function getRandomRight(){
+    const displayCor = correctArr[Math.floor(Math.random() * correctArr.length)]
+    document.getElementById('bottom').innerHTML = `${displayCor.bottomDisplay}`;
+}
+
+//RANDOM PARAGRAPH AT THE BOTTOM FOR WRONG
+function getRandomWrong(){
+    const displayInc = incorrectArr[Math.floor(Math.random() * displayArr.length)]
+    document.getElementById('bottom').innerHTML = `${displayInc.bottomDisplay}`;
+}
+
 
 //FUNCTIONS TO MATCH RANDOM WITH THE CORRECT ANSWERS
 
@@ -251,7 +302,8 @@ function checkGame7(){
 function keyOfAProg1 (){
     if (userInput1.value === "A" && userInput2.value === "E" && userInput3.value === "F#m" || "Gbm" && userInput4.value === "D") {
         playTada();
-            console.log (`Nice One 1.1`, init())
+        getRandomRight();
+        setTimeout(function(){init();}, 3000);
     } else {console.log(`incorrect, try again`, tryAgain())}
 }
 
@@ -259,7 +311,8 @@ function keyOfAProg1 (){
 function keyOfAProg2 (){
     if (userInput1.value === "F#m" || "Gbm" && userInput2.value === "Bm" && userInput3.value === "E" && userInput4.value === "A") {
         playTada();
-            console.log (`Nice One 1.2`, init())
+        getRandomRight();
+        setTimeout(function(){init();}, 3000);
     } else {console.log(`incorrect, try again`, tryAgain())}
 }
 
@@ -267,7 +320,8 @@ function keyOfAProg2 (){
 function keyOfAProg3(){
     if (userInput1.value === "F#m" || "Gbm" && userInput2.value === "D" && userInput3.value === "A" && userInput4.value === "E") {
         playTada();
-            console.log (`Nice One 1.3`, init())
+        getRandomRight();
+        setTimeout(function(){init();}, 3000);
     } else {console.log(`incorrect, try again`, tryAgain())}
 }
 
@@ -275,7 +329,8 @@ function keyOfAProg3(){
 function keyOfAProg4(){
     if (userInput1.value === "A" && userInput2.value === "D" && userInput3.value === "F#m" && userInput4.value === "E") {
         playTada();
-        console.log (`Nice One 1.4`, init())
+        getRandomRight();
+        setTimeout(function(){init();}, 3000);
     } else {console.log(`incorrect, try again`, tryAgain())}
 }
 
@@ -283,7 +338,8 @@ function keyOfAProg4(){
 function keyOfAProg5(){
     if (userInput1.value === "A" && userInput2.value === "C#m" || "Dbm" && userInput3.value === "F#m" && userInput4.value === "E") {
         playTada();
-            console.log (`Nice One 1.5`, init())
+        getRandomRight();
+        setTimeout(function(){init();}, 3000);
     } else {console.log(`incorrect, try again`, tryAgain())}
 }
 
@@ -291,7 +347,8 @@ function keyOfAProg5(){
 function keyOfBProg1 (){
     if (userInput1.value === "B" && userInput2.value === "F#" && userInput3.value === "G#m" || "Abm" && userInput4.value === "E") {
         playTada();
-            console.log (`Nice One 2.1`, init())
+        getRandomRight();
+        setTimeout(function(){init();}, 3000);
     } else {console.log(`incorrect, try again`, tryAgain())}
 }
 
@@ -299,7 +356,8 @@ function keyOfBProg1 (){
 function keyOfBProg2 (){
     if (userInput1.value === "G#m" || "Abm" && userInput2.value === "C#m" && userInput3.value === "F#" && userInput4.value === "B") {
         playTada();
-            console.log (`Nice One 2.2`, init())
+        getRandomRight();
+        setTimeout(function(){init();}, 3000);
     } else {console.log(`incorrect, try again`, tryAgain())}
 }
 
@@ -307,7 +365,8 @@ function keyOfBProg2 (){
 function keyOfBProg3(){
     if (userInput1.value === "G#m" || "Abm" && userInput2.value === "E" && userInput3.value === "B" && userInput4.value === "F#") {
         playTada();
-            console.log (`Nice One 2.3`, init())
+        getRandomRight();
+        setTimeout(function(){init();}, 3000);
     } else {console.log(`incorrect, try again`, tryAgain())}
 }
 
@@ -315,7 +374,8 @@ function keyOfBProg3(){
 function keyOfBProg4(){
     if (userInput1.value === "B" && userInput2.value === "E" && userInput3.value === "G#m" || "Abm" && userInput4.value === "F#" || "Gb") {
         playTada();
-        console.log (`Nice One 2.4`, init())
+        getRandomRight();
+        setTimeout(function(){init();}, 3000);
     } else {console.log(`incorrect, try again`, tryAgain())}
 }
 
@@ -323,7 +383,8 @@ function keyOfBProg4(){
 function keyOfBProg5(){
     if (userInput1.value === "B" && userInput2.value === "D#m" || "Ebm" && userInput3.value === "G#m" || "Abm" && userInput4.value === "E") {
         playTada();
-            console.log (`Nice One 2.5`, init())
+        getRandomRight();
+        setTimeout(function(){init();}, 3000);
     } else {console.log(`incorrect, try again`, tryAgain())}
 }
 
@@ -331,7 +392,8 @@ function keyOfBProg5(){
 function keyOfCProg1 (){
     if (userInput1.value === "C" && userInput2.value === "G" && userInput3.value === "Am" && userInput4.value === "F") {
         playTada();
-        console.log (`Nice One 3.1`, init())
+        getRandomRight();
+        setTimeout(function(){init();}, 3000);
     } else {console.log(`incorrect, try again`, tryAgain())}
 }
 
@@ -339,7 +401,8 @@ function keyOfCProg1 (){
 function keyOfCProg2 (){
     if (userInput1.value === "Am" && userInput2.value === "Em" && userInput3.value === "G" && userInput4.value === "C") {
         playTada();
-            console.log (`Nice One 3.2`, init())
+        getRandomRight();
+        setTimeout(function(){init();}, 3000);
     } else {console.log(`incorrect, try again`, tryAgain())}
 }
 
@@ -347,7 +410,8 @@ function keyOfCProg2 (){
 function keyOfCProg3(){
     if (userInput1.value === "Am" && userInput2.value === "F" && userInput3.value === "C" && userInput4.value === "G") {
         playTada();
-            console.log (`Nice One 2.3`, init())
+        getRandomRight();
+        setTimeout(function(){init();}, 3000);
     } else {console.log(`incorrect, try again`, tryAgain())}
 }
 
@@ -355,7 +419,8 @@ function keyOfCProg3(){
 function keyOfCProg4(){
     if (userInput1.value === "C" && userInput2.value === "F" && userInput3.value === "Am" && userInput4.value === "G") {
         playTada();
-        console.log (`Nice One 3.4`, init())
+        getRandomRight();
+        setTimeout(function(){init();}, 3000);
     } else {console.log(`incorrect, try again`, tryAgain())}
 }
 
@@ -363,7 +428,8 @@ function keyOfCProg4(){
 function keyOfCProg5(){
     if (userInput1.value === "C" && userInput2.value === "Em" && userInput3.value === "Am" && userInput4.value === "F") {
         playTada();
-            console.log (`Nice One 3.5`, init())
+        getRandomRight();
+        setTimeout(function(){init();}, 3000);
     } else {console.log(`incorrect, try again`, tryAgain())}
 }
 
@@ -371,7 +437,8 @@ function keyOfCProg5(){
 function keyOfDProg1 (){
     if (userInput1.value === "D" && userInput2.value === "A" && userInput3.value === "Bm" && userInput4.value === "G") {
         playTada();
-        console.log (`Nice One 4.1`, init())
+        getRandomRight();
+        setTimeout(function(){init();}, 3000);
     } else {console.log(`incorrect, try again`, tryAgain())}
 }
 
@@ -379,7 +446,8 @@ function keyOfDProg1 (){
 function keyOfDProg2 (){
     if (userInput1.value === "Bm" && userInput2.value === "F#m" || "Gbm" && userInput3.value === "A" && userInput4.value === "D") {
         playTada();
-            console.log (`Nice One 4.2`, init())
+        getRandomRight();
+        setTimeout(function(){init();}, 3000);
     } else {console.log(`incorrect, try again`, tryAgain())}
 }
 
@@ -387,7 +455,8 @@ function keyOfDProg2 (){
 function keyOfDProg3(){
     if (userInput1.value === "Bm" && userInput2.value === "G" && userInput3.value === "D" && userInput4.value === "A") {
         playTada();
-            console.log (`Nice One 4.3`, init())
+        getRandomRight();
+        setTimeout(function(){init();}, 3000);
     } else {console.log(`incorrect, try again`, tryAgain())}
 }
 
@@ -395,7 +464,8 @@ function keyOfDProg3(){
 function keyOfDProg4(){
     if (userInput1.value === "D" && userInput2.value === "G" && userInput3.value === "Bm" && userInput4.value === "A") {
         playTada();
-        console.log (`Nice One 4.4`, init())
+        getRandomRight();
+        setTimeout(function(){init();}, 3000);
     } else {console.log(`incorrect, try again`, tryAgain())}
 }
 
@@ -403,7 +473,8 @@ function keyOfDProg4(){
 function keyOfDProg5(){
     if (userInput1.value === "D" && userInput2.value === "F#m" || "Gbm" && userInput3.value === "Bm" && userInput4.value === "G") {
         playTada();
-            console.log (`Nice One 4.5`, init())
+        getRandomRight();
+        setTimeout(function(){init();}, 3000);
     } else {console.log(`incorrect, try again`, tryAgain())}
 }
 
@@ -411,7 +482,8 @@ function keyOfDProg5(){
 function keyOfEProg1 (){
     if (userInput1.value === "E" && userInput2.value === "B" && userInput3.value === "C#m" || "Dbm" && userInput4.value === "A") {
         playTada();
-        console.log (`Nice One 5.1`, init())
+        getRandomRight();
+        setTimeout(function(){init();}, 3000);
     } else {console.log(`incorrect, try again`, tryAgain())}
 }
 
@@ -419,7 +491,8 @@ function keyOfEProg1 (){
 function keyOfEProg2 (){
     if (userInput1.value === "C#m" || "Dbm" && userInput2.value === "F#m" || "Gbm" && userInput3.value === "B" && userInput4.value === "E") {
         playTada();
-            console.log (`Nice One 5.2`, init())
+        getRandomRight();
+        setTimeout(function(){init();}, 3000);
     } else {console.log(`incorrect, try again`, tryAgain())}
 }
 
@@ -427,7 +500,8 @@ function keyOfEProg2 (){
 function keyOfEProg3(){
     if (userInput1.value === "C#m" || "Dbm" && userInput2.value === "A" && userInput3.value === "E" && userInput4.value === "B") {
         playTada();
-            console.log (`Nice One 5.3`, init())
+        getRandomRight();
+        setTimeout(function(){init();}, 3000);
     } else {console.log(`incorrect, try again`, tryAgain())}
 }
 
@@ -435,7 +509,8 @@ function keyOfEProg3(){
 function keyOfEProg4(){
     if (userInput1.value === "E" && userInput2.value === "A" && userInput3.value === "C#m" || "Dbm" && userInput4.value === "B") {
         playTada();
-        console.log (`Nice One 5.4`, init())
+        getRandomRight();
+        setTimeout(function(){init();}, 3000);
     } else {console.log(`incorrect, try again`, tryAgain())}
 }
 
@@ -443,7 +518,8 @@ function keyOfEProg4(){
 function keyOfEProg5(){
     if (userInput1.value === "E" && userInput2.value === "G#m" || "Abm" && userInput3.value === "C#m" || "Dbm" && userInput4.value === "A") {
         playTada();
-            console.log (`Nice One 5.5`, init())
+        getRandomRight();
+        setTimeout(function(){init();}, 3000);
     } else {console.log(`incorrect, try again`, tryAgain())}
 }
 
@@ -451,7 +527,8 @@ function keyOfEProg5(){
 function keyOfFProg1 (){
     if (userInput1.value === "F" && userInput2.value === "C" && userInput3.value === "Dm" && userInput4.value === "A#" || "Bb") {
         playTada();
-        console.log (`Nice One 6.1`, init())
+        getRandomRight();
+        setTimeout(function(){init();}, 3000);
     } else {console.log(`incorrect, try again`, tryAgain())}
 }
 
@@ -459,7 +536,8 @@ function keyOfFProg1 (){
 function keyOfFProg2 (){
     if (userInput1.value === "Dm" && userInput2.value === "Gm" && userInput3.value === "C" && userInput4.value === "F") {
         playTada();
-            console.log (`Nice One 6.2`, init())
+        getRandomRight();
+        setTimeout(function(){init();}, 3000);
     } else {console.log(`incorrect, try again`, tryAgain())}
 }
 
@@ -467,7 +545,8 @@ function keyOfFProg2 (){
 function keyOfFProg3(){
     if (userInput1.value === "Dm" && userInput2.value === "A#" || "Bb" && userInput3.value === "F" && userInput4.value === "C") {
         playTada();
-            console.log (`Nice One 6.3`, init())
+        getRandomRight();
+        setTimeout(function(){init();}, 3000);
     } else {console.log(`incorrect, try again`, tryAgain())}
 }
 
@@ -475,7 +554,8 @@ function keyOfFProg3(){
 function keyOfFProg4(){
     if (userInput1.value === "F" && userInput2.value === "A#" || "Bb" && userInput3.value === "Dm" && userInput4.value === "C") {
         playTada();
-        console.log (`Nice One 6.4`, init())
+        getRandomRight();
+        setTimeout(function(){init();}, 3000);
     } else {console.log(`incorrect, try again`, tryAgain())}
 }
 
@@ -483,16 +563,17 @@ function keyOfFProg4(){
 function keyOfFProg5(){
     if (userInput1.value === "F" && userInput2.value === "Am" && userInput3.value === "Dm" && userInput4.value === "A#" || "Bb") {
         playTada();
-            console.log (`Nice One 6.5`, init())
+        getRandomRight();
+        setTimeout(function(){init();}, 3000);
     } else {console.log(`incorrect, try again`, tryAgain())}
 }
-
 
 //Key of: G ||| Progression: 1,5,6,4
 function keyOfGProg1 (){
     if (userInput1.value === "G" && userInput2.value === "D" && userInput3.value === "Em" && userInput4.value === "C") {
         playTada();
-        console.log (`Nice One 7.1`, init())
+        getRandomRight();
+        setTimeout(function(){init();}, 3000);
     } else {console.log(`incorrect, try again`, tryAgain())}
 }
 
@@ -500,7 +581,8 @@ function keyOfGProg1 (){
 function keyOfGProg2 (){
     if (userInput1.value === "Em" && userInput2.value === "Gm" && userInput3.value === "D" && userInput4.value === "G") {
         playTada();
-            console.log (`Nice One 7.2`, init())
+        getRandomRight();
+        setTimeout(function(){init();}, 3000);
     } else {console.log(`incorrect, try again`, tryAgain())}
 }
 
@@ -508,7 +590,8 @@ function keyOfGProg2 (){
 function keyOfGProg3(){
     if (userInput1.value === "Em" && userInput2.value === "C" && userInput3.value === "G" && userInput4.value === "D") {
         playTada();
-            console.log (`Nice One 7.3`, init())
+        getRandomRight();
+        setTimeout(function(){init();}, 3000);
     } else {console.log(`incorrect, try again`, tryAgain())}
 }
 
@@ -516,7 +599,8 @@ function keyOfGProg3(){
 function keyOfGProg4(){
     if (userInput1.value === "G" && userInput2.value === "C" && userInput3.value === "Em" && userInput4.value === "D") {
         playTada();
-        console.log (`Nice One 7.4`, init())
+        getRandomRight();
+        setTimeout(function(){init();}, 3000);
     } else {console.log(`incorrect, try again`, tryAgain())}
 }
 
@@ -524,7 +608,8 @@ function keyOfGProg4(){
 function keyOfGProg5(){
     if (userInput1.value === "G" && userInput2.value === "Am" && userInput3.value === "Em" && userInput4.value === "C") {
         playTada();
-            console.log (`Nice One 7.5`, init())
+        getRandomRight();
+        setTimeout(function(){init();}, 3000);
     } else {console.log(`incorrect, try again`, tryAgain())}
 }
 
