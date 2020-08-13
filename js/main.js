@@ -103,6 +103,7 @@ function tryAgain(){
     userInput2.value = '';
     userInput3.value = '';
     userInput4.value = '';
+    document.getElementById('bottom').innerHTML = '';
 }
 
 //audio function
@@ -136,7 +137,7 @@ function getRandomRight(){
 
 //RANDOM PARAGRAPH AT THE BOTTOM FOR WRONG
 function getRandomWrong(){
-    const displayInc = incorrectArr[Math.floor(Math.random() * displayArr.length)]
+    const displayInc = incorrectArr[Math.floor(Math.random() * incorrectArr.length)]
     document.getElementById('bottom').innerHTML = `${displayInc.bottomDisplay}`;
 }
 
@@ -293,7 +294,7 @@ function checkGame7(){
         && document.getElementById('newProgression').innerHTML === "1,3,6,4"){
         keyOfGProg5();
     } else {
-       console.log(`how...`)
+       return `how...`
     }
 }
 
@@ -304,7 +305,11 @@ function keyOfAProg1 (){
         playTada();
         getRandomRight();
         setTimeout(function(){init();}, 3000);
-    } else {console.log(`incorrect, try again`, tryAgain())}
+    } else {
+        playWrong();
+        getRandomWrong();
+        setTimeout(function(){tryAgain();}, 3000);
+}
 }
 
 // Key of: A ||| Progression: 6,2,5,1
@@ -313,7 +318,11 @@ function keyOfAProg2 (){
         playTada();
         getRandomRight();
         setTimeout(function(){init();}, 3000);
-    } else {console.log(`incorrect, try again`, tryAgain())}
+    } else { 
+        playWrong();
+        getRandomWrong();
+        setTimeout(function(){tryAgain();}, 3000);
+}
 }
 
 // Key of: A ||| Progression: 6,4,1,5
@@ -322,7 +331,11 @@ function keyOfAProg3(){
         playTada();
         getRandomRight();
         setTimeout(function(){init();}, 3000);
-    } else {console.log(`incorrect, try again`, tryAgain())}
+    } else { 
+        playWrong();
+        getRandomWrong();
+        setTimeout(function(){tryAgain();}, 3000);
+}
 }
 
 // key of: A ||| Progression: 1,4,6,5
@@ -331,7 +344,11 @@ function keyOfAProg4(){
         playTada();
         getRandomRight();
         setTimeout(function(){init();}, 3000);
-    } else {console.log(`incorrect, try again`, tryAgain())}
+    } else { 
+        playWrong();
+        getRandomWrong();
+        setTimeout(function(){tryAgain();}, 3000);
+}
 }
 
 // key of: A ||| Progression: 1, 3, 6, 4
@@ -340,7 +357,11 @@ function keyOfAProg5(){
         playTada();
         getRandomRight();
         setTimeout(function(){init();}, 3000);
-    } else {console.log(`incorrect, try again`, tryAgain())}
+    } else { 
+        playWrong();
+        getRandomWrong();
+        setTimeout(function(){tryAgain();}, 3000);
+}
 }
 
 // Key of: B ||| Progression: 1,5,6,4
@@ -349,7 +370,11 @@ function keyOfBProg1 (){
         playTada();
         getRandomRight();
         setTimeout(function(){init();}, 3000);
-    } else {console.log(`incorrect, try again`, tryAgain())}
+    } else { 
+        playWrong();
+        getRandomWrong();
+        setTimeout(function(){tryAgain();}, 3000);
+}
 }
 
 // Key of: B ||| Progression: 6,2,5,1
@@ -358,7 +383,11 @@ function keyOfBProg2 (){
         playTada();
         getRandomRight();
         setTimeout(function(){init();}, 3000);
-    } else {console.log(`incorrect, try again`, tryAgain())}
+    } else { 
+        playWrong();
+        getRandomWrong();
+        setTimeout(function(){tryAgain();}, 3000);
+}
 }
 
 // Key of: B ||| Progression: 6,4,1,5
@@ -367,7 +396,11 @@ function keyOfBProg3(){
         playTada();
         getRandomRight();
         setTimeout(function(){init();}, 3000);
-    } else {console.log(`incorrect, try again`, tryAgain())}
+    } else {
+        playWrong();
+        getRandomWrong();
+        setTimeout(function(){tryAgain();}, 3000);
+}
 }
 
 // key of: B ||| Progression: 1,4,6,5
@@ -376,7 +409,11 @@ function keyOfBProg4(){
         playTada();
         getRandomRight();
         setTimeout(function(){init();}, 3000);
-    } else {console.log(`incorrect, try again`, tryAgain())}
+    } else {
+        playWrong();
+        getRandomWrong();
+        setTimeout(function(){tryAgain();}, 3000);
+}
 }
 
 // key of: B ||| Progression: 1, 3, 6, 4
@@ -385,7 +422,11 @@ function keyOfBProg5(){
         playTada();
         getRandomRight();
         setTimeout(function(){init();}, 3000);
-    } else {console.log(`incorrect, try again`, tryAgain())}
+    } else {
+        playWrong();
+        getRandomWrong();
+        setTimeout(function(){tryAgain();}, 3000);
+}
 }
 
 // Key of: C ||| Progression: 1,5,6,4
@@ -394,7 +435,11 @@ function keyOfCProg1 (){
         playTada();
         getRandomRight();
         setTimeout(function(){init();}, 3000);
-    } else {console.log(`incorrect, try again`, tryAgain())}
+    } else {
+        playWrong();
+        getRandomWrong();
+        setTimeout(function(){tryAgain();}, 3000);
+}
 }
 
 // Key of: C ||| Progression: 6,2,5,1
@@ -403,7 +448,11 @@ function keyOfCProg2 (){
         playTada();
         getRandomRight();
         setTimeout(function(){init();}, 3000);
-    } else {console.log(`incorrect, try again`, tryAgain())}
+    } else {
+        playWrong();
+        getRandomWrong();
+        setTimeout(function(){tryAgain();}, 3000);
+}
 }
 
 // Key of: C ||| Progression: 6,4,1,5
@@ -412,7 +461,11 @@ function keyOfCProg3(){
         playTada();
         getRandomRight();
         setTimeout(function(){init();}, 3000);
-    } else {console.log(`incorrect, try again`, tryAgain())}
+    } else {
+        playWrong();
+        getRandomWrong();
+        setTimeout(function(){tryAgain();}, 3000);
+}
 }
 
 // key of: C ||| Progression: 1,4,6,5
@@ -421,7 +474,11 @@ function keyOfCProg4(){
         playTada();
         getRandomRight();
         setTimeout(function(){init();}, 3000);
-    } else {console.log(`incorrect, try again`, tryAgain())}
+    } else {
+        playWrong();
+        getRandomWrong();
+        setTimeout(function(){tryAgain();}, 3000);
+}        
 }
 
 // key of: C ||| Progression: 1, 3, 6, 4
@@ -430,7 +487,11 @@ function keyOfCProg5(){
         playTada();
         getRandomRight();
         setTimeout(function(){init();}, 3000);
-    } else {console.log(`incorrect, try again`, tryAgain())}
+    } else {
+        playWrong();
+        getRandomWrong();
+        setTimeout(function(){tryAgain();}, 3000);
+}        
 }
 
 //Key of: D ||| Progression: 1,5,6,4
@@ -439,7 +500,11 @@ function keyOfDProg1 (){
         playTada();
         getRandomRight();
         setTimeout(function(){init();}, 3000);
-    } else {console.log(`incorrect, try again`, tryAgain())}
+    } else {
+        playWrong();
+        getRandomWrong();
+        setTimeout(function(){tryAgain();}, 3000);
+}        
 }
 
 // Key of: D ||| Progression: 6,2,5,1
@@ -448,7 +513,11 @@ function keyOfDProg2 (){
         playTada();
         getRandomRight();
         setTimeout(function(){init();}, 3000);
-    } else {console.log(`incorrect, try again`, tryAgain())}
+    } else {
+        playWrong();
+        getRandomWrong();
+        setTimeout(function(){tryAgain();}, 3000);
+}        
 }
 
 // Key of: D ||| Progression: 6,4,1,5
@@ -457,7 +526,11 @@ function keyOfDProg3(){
         playTada();
         getRandomRight();
         setTimeout(function(){init();}, 3000);
-    } else {console.log(`incorrect, try again`, tryAgain())}
+    } else {
+        playWrong();
+        getRandomWrong();
+        setTimeout(function(){tryAgain();}, 3000);
+}        
 }
 
 // key of: D ||| Progression: 1,4,6,5
@@ -466,7 +539,11 @@ function keyOfDProg4(){
         playTada();
         getRandomRight();
         setTimeout(function(){init();}, 3000);
-    } else {console.log(`incorrect, try again`, tryAgain())}
+    } else {
+        playWrong();
+        getRandomWrong();
+        setTimeout(function(){tryAgain();}, 3000);
+}        
 }
 
 // key of: D ||| Progression: 1, 3, 6, 4
@@ -484,7 +561,11 @@ function keyOfEProg1 (){
         playTada();
         getRandomRight();
         setTimeout(function(){init();}, 3000);
-    } else {console.log(`incorrect, try again`, tryAgain())}
+    } else {
+        playWrong();
+        getRandomWrong();
+        setTimeout(function(){tryAgain();}, 3000);
+}        
 }
 
 // Key of: E ||| Progression: 6,2,5,1
@@ -493,7 +574,11 @@ function keyOfEProg2 (){
         playTada();
         getRandomRight();
         setTimeout(function(){init();}, 3000);
-    } else {console.log(`incorrect, try again`, tryAgain())}
+    } else {
+        playWrong();
+        getRandomWrong();
+        setTimeout(function(){tryAgain();}, 3000);
+}        
 }
 
 // Key of: E ||| Progression: 6,4,1,5
@@ -502,7 +587,11 @@ function keyOfEProg3(){
         playTada();
         getRandomRight();
         setTimeout(function(){init();}, 3000);
-    } else {console.log(`incorrect, try again`, tryAgain())}
+    } else {
+        playWrong();
+        getRandomWrong();
+        setTimeout(function(){tryAgain();}, 3000);
+}        
 }
 
 // key of: E||| Progression: 1,4,6,5
@@ -511,7 +600,11 @@ function keyOfEProg4(){
         playTada();
         getRandomRight();
         setTimeout(function(){init();}, 3000);
-    } else {console.log(`incorrect, try again`, tryAgain())}
+    } else {
+        playWrong();
+        getRandomWrong();
+        setTimeout(function(){tryAgain();}, 3000);
+}        
 }
 
 // key of: E ||| Progression: 1, 3, 6, 4
@@ -520,7 +613,11 @@ function keyOfEProg5(){
         playTada();
         getRandomRight();
         setTimeout(function(){init();}, 3000);
-    } else {console.log(`incorrect, try again`, tryAgain())}
+    } else {
+        playWrong();
+        getRandomWrong();
+        setTimeout(function(){tryAgain();}, 3000);
+}        
 }
 
 //Key of: F ||| Progression: 1,5,6,4
@@ -529,7 +626,11 @@ function keyOfFProg1 (){
         playTada();
         getRandomRight();
         setTimeout(function(){init();}, 3000);
-    } else {console.log(`incorrect, try again`, tryAgain())}
+    } else {
+        playWrong();
+        getRandomWrong();
+        setTimeout(function(){tryAgain();}, 3000);
+}        
 }
 
 // Key of: F ||| Progression: 6,2,5,1
@@ -538,7 +639,11 @@ function keyOfFProg2 (){
         playTada();
         getRandomRight();
         setTimeout(function(){init();}, 3000);
-    } else {console.log(`incorrect, try again`, tryAgain())}
+    } else {
+        playWrong();
+        getRandomWrong();
+        setTimeout(function(){tryAgain();}, 3000);
+}        
 }
 
 // Key of: F ||| Progression: 6,4,1,5
@@ -547,7 +652,11 @@ function keyOfFProg3(){
         playTada();
         getRandomRight();
         setTimeout(function(){init();}, 3000);
-    } else {console.log(`incorrect, try again`, tryAgain())}
+    } else {
+        playWrong();
+        getRandomWrong();
+        setTimeout(function(){tryAgain();}, 3000);
+}        
 }
 
 // key of: F ||| Progression: 1,4,6,5
@@ -556,7 +665,11 @@ function keyOfFProg4(){
         playTada();
         getRandomRight();
         setTimeout(function(){init();}, 3000);
-    } else {console.log(`incorrect, try again`, tryAgain())}
+    } else {
+        playWrong();
+        getRandomWrong();
+        setTimeout(function(){tryAgain();}, 3000);
+}        
 }
 
 // key of: F ||| Progression: 1, 3, 6, 4
@@ -565,7 +678,11 @@ function keyOfFProg5(){
         playTada();
         getRandomRight();
         setTimeout(function(){init();}, 3000);
-    } else {console.log(`incorrect, try again`, tryAgain())}
+    } else {
+        playWrong();
+        getRandomWrong();
+        setTimeout(function(){tryAgain();}, 3000);
+}        
 }
 
 //Key of: G ||| Progression: 1,5,6,4
@@ -574,7 +691,11 @@ function keyOfGProg1 (){
         playTada();
         getRandomRight();
         setTimeout(function(){init();}, 3000);
-    } else {console.log(`incorrect, try again`, tryAgain())}
+    } else {
+        playWrong();
+        getRandomWrong();
+        setTimeout(function(){tryAgain();}, 3000);
+}        
 }
 
 // Key of: G ||| Progression: 6,2,5,1
@@ -583,7 +704,11 @@ function keyOfGProg2 (){
         playTada();
         getRandomRight();
         setTimeout(function(){init();}, 3000);
-    } else {console.log(`incorrect, try again`, tryAgain())}
+    } else {
+        playWrong();
+        getRandomWrong();
+        setTimeout(function(){tryAgain();}, 3000);
+}        
 }
 
 // Key of: G ||| Progression: 6,4,1,5
@@ -592,7 +717,11 @@ function keyOfGProg3(){
         playTada();
         getRandomRight();
         setTimeout(function(){init();}, 3000);
-    } else {console.log(`incorrect, try again`, tryAgain())}
+    } else {
+        playWrong();
+        getRandomWrong();
+        setTimeout(function(){tryAgain();}, 3000);
+}
 }
 
 // key of: G ||| Progression: 1,4,6,5
@@ -601,7 +730,11 @@ function keyOfGProg4(){
         playTada();
         getRandomRight();
         setTimeout(function(){init();}, 3000);
-    } else {console.log(`incorrect, try again`, tryAgain())}
+    } else {
+        playWrong();
+        getRandomWrong();
+        setTimeout(function(){tryAgain();}, 3000);
+}
 }
 
 // key of: G ||| Progression: 1, 3, 6, 4
@@ -610,6 +743,9 @@ function keyOfGProg5(){
         playTada();
         getRandomRight();
         setTimeout(function(){init();}, 3000);
-    } else {console.log(`incorrect, try again`, tryAgain())}
+    } else {
+        playWrong();
+        getRandomWrong();
+        setTimeout(function(){tryAgain();}, 3000);
 }
-
+}
