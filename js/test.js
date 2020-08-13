@@ -377,14 +377,14 @@ function isRight(){
     //     && userInput4.value === "C") {
     //         console.log (`Nice One 6.4`, playTada())
     
-    // // key of F progression 5 | 1-3-6-4
-    // } else if (randomProg === progressionArray[4]
-    //     && randomKey === "F"
-    //     && userInput1.value === "F"
-    //     && userInput2.value === "Am"
-    //     && userInput3.value === "Dm"
-    //     && userInput4.value === "A#" || "Bb") {
-    //         console.log (`Nice One 6.5`, playTada())
+    // key of F progression 5 | 1-3-6-4
+    } else if (randomProg === progressionArray[4]
+        && randomKey === "F"
+        && userInput1.value === "F"
+        && userInput2.value === "Am"
+        && userInput3.value === "Dm"
+        && userInput4.value === "A#" || "Bb") {
+            console.log (`Nice One 6.5`, playTada())
     
     // if wrong
     } else {

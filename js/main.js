@@ -579,7 +579,7 @@ function keyOfGProg1 (){
 
 // Key of: G ||| Progression: 6,2,5,1
 function keyOfGProg2 (){
-    if (userInput1.value === "Em" && userInput2.value === "Gm" && userInput3.value === "D" && userInput4.value === "G") {
+    if (userInput1.value === "Em" && userInput2.value === "Am" && userInput3.value === "D" && userInput4.value === "G") {
         playTada();
         getRandomRight();
         setTimeout(function(){init();}, 3000);
@@ -606,7 +606,7 @@ function keyOfGProg4(){
 
 // key of: G ||| Progression: 1, 3, 6, 4
 function keyOfGProg5(){
-    if (userInput1.value === "G" && userInput2.value === "Am" && userInput3.value === "Em" && userInput4.value === "C") {
+    if (userInput1.value === "G" && userInput2.value === "Bm" && userInput3.value === "Em" && userInput4.value === "C") {
         playTada();
         getRandomRight();
         setTimeout(function(){init();}, 3000);
