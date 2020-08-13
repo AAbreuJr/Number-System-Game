@@ -97,10 +97,12 @@ function getRandomProg (evt){
     document.getElementById('newProgression').innerHTML = `${randomProg.progression}`;
 }
 
+//FUNCTIONS TO MATCH RANDOM WITH THE CORRECT ANSWERS
+
 function checkGame1(){
     if (document.getElementById('newKey').innerHTML === "A" 
     && document.getElementById('newProgression').innerHTML === "1,5,6,4") {
-        console.log(`1 yep`);
+        keyOfAProg1();
     } else if (document.getElementById('newKey').innerHTML === "A" 
     && document.getElementById('newProgression').innerHTML === "6,2,5,1"){
         console.log(`2 yep`);
@@ -159,3 +161,88 @@ function checkGame3(){
         checkGame4();
     }
 }
+
+function checkGame4(){
+    if (document.getElementById('newKey').innerHTML === "D" 
+    && document.getElementById('newProgression').innerHTML === "1,5,6,4") {
+        console.log(`1 D yep`);
+    } else if (document.getElementById('newKey').innerHTML === "D" 
+    && document.getElementById('newProgression').innerHTML === "6,2,5,1"){
+        console.log(`2 D yep`);
+    } else if (document.getElementById('newKey').innerHTML === "D" 
+    && document.getElementById('newProgression').innerHTML === "6,4,1,5") {
+        console.log(`3 D yep`);
+    } else if (document.getElementById('newKey').innerHTML === "D" 
+    && document.getElementById('newProgression').innerHTML === "1,4,6,5"){
+        console.log(`4 D yep`);
+    } else if (document.getElementById('newKey').innerHTML === "D" 
+        && document.getElementById('newProgression').innerHTML === "1,3,6,4"){
+            console.log(`5 D yep`);
+    } else {
+        checkGame5();
+    }
+}
+
+function checkGame5(){
+    if (document.getElementById('newKey').innerHTML === "E" 
+    && document.getElementById('newProgression').innerHTML === "1,5,6,4") {
+        console.log(`1 E yep`);
+    } else if (document.getElementById('newKey').innerHTML === "E" 
+    && document.getElementById('newProgression').innerHTML === "6,2,5,1"){
+        console.log(`2 E yep`);
+    } else if (document.getElementById('newKey').innerHTML === "E" 
+    && document.getElementById('newProgression').innerHTML === "6,4,1,5") {
+        console.log(`3 E yep`);
+    } else if (document.getElementById('newKey').innerHTML === "E" 
+    && document.getElementById('newProgression').innerHTML === "1,4,6,5"){
+        console.log(`4 E yep`);
+    } else if (document.getElementById('newKey').innerHTML === "E" 
+        && document.getElementById('newProgression').innerHTML === "1,3,6,4"){
+            console.log(`5 E yep`);
+    } else {
+        checkGame6();
+    }
+}
+
+function checkGame6(){
+    if (document.getElementById('newKey').innerHTML === "F" 
+    && document.getElementById('newProgression').innerHTML === "1,5,6,4") {
+        console.log(`1 F yep`);
+    } else if (document.getElementById('newKey').innerHTML === "F" 
+    && document.getElementById('newProgression').innerHTML === "6,2,5,1"){
+        console.log(`2 F yep`);
+    } else if (document.getElementById('newKey').innerHTML === "F" 
+    && document.getElementById('newProgression').innerHTML === "6,4,1,5") {
+        console.log(`3 F yep`);
+    } else if (document.getElementById('newKey').innerHTML === "F" 
+    && document.getElementById('newProgression').innerHTML === "1,4,6,5"){
+        console.log(`4 F yep`);
+    } else if (document.getElementById('newKey').innerHTML === "F" 
+        && document.getElementById('newProgression').innerHTML === "1,3,6,4"){
+            console.log(`5 F yep`);
+    } else {
+        checkGame7();
+    }
+}
+
+function checkGame7(){
+    if (document.getElementById('newKey').innerHTML === "G" 
+    && document.getElementById('newProgression').innerHTML === "1,5,6,4") {
+        console.log(`1 G yep`);
+    } else if (document.getElementById('newKey').innerHTML === "G" 
+    && document.getElementById('newProgression').innerHTML === "6,2,5,1"){
+        console.log(`2 G yep`);
+    } else if (document.getElementById('newKey').innerHTML === "G" 
+    && document.getElementById('newProgression').innerHTML === "6,4,1,5") {
+        console.log(`3 G yep`);
+    } else if (document.getElementById('newKey').innerHTML === "G" 
+    && document.getElementById('newProgression').innerHTML === "1,4,6,5"){
+        console.log(`4 G yep`);
+    } else if (document.getElementById('newKey').innerHTML === "G" 
+        && document.getElementById('newProgression').innerHTML === "1,3,6,4"){
+            console.log(`5 G yep`);
+    } else {
+       console.log(`how...`)
+    }
+}
+
