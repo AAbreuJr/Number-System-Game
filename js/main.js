@@ -206,19 +206,19 @@ function checkGame5(){
 function checkGame6(){
     if (document.getElementById('newKey').innerHTML === "F" 
     && document.getElementById('newProgression').innerHTML === "1,5,6,4") {
-        console.log(`1 F yep`);
+        keyOfFProg1();
     } else if (document.getElementById('newKey').innerHTML === "F" 
     && document.getElementById('newProgression').innerHTML === "6,2,5,1"){
-        console.log(`2 F yep`);
+        keyOfFProg1();
     } else if (document.getElementById('newKey').innerHTML === "F" 
     && document.getElementById('newProgression').innerHTML === "6,4,1,5") {
-        console.log(`3 F yep`);
+        keyOfFProg1();
     } else if (document.getElementById('newKey').innerHTML === "F" 
     && document.getElementById('newProgression').innerHTML === "1,4,6,5"){
-        console.log(`4 F yep`);
+        keyOfFProg1();
     } else if (document.getElementById('newKey').innerHTML === "F" 
         && document.getElementById('newProgression').innerHTML === "1,3,6,4"){
-            console.log(`5 F yep`);
+        keyOfFProg1();
     } else {
         checkGame7();
     }
@@ -228,19 +228,19 @@ function checkGame6(){
 function checkGame7(){
     if (document.getElementById('newKey').innerHTML === "G" 
     && document.getElementById('newProgression').innerHTML === "1,5,6,4") {
-        console.log(`1 G yep`);
+        keyOfGProg1();
     } else if (document.getElementById('newKey').innerHTML === "G" 
     && document.getElementById('newProgression').innerHTML === "6,2,5,1"){
-        console.log(`2 G yep`);
+        keyOfGProg1();
     } else if (document.getElementById('newKey').innerHTML === "G" 
     && document.getElementById('newProgression').innerHTML === "6,4,1,5") {
-        console.log(`3 G yep`);
+        keyOfGProg1();
     } else if (document.getElementById('newKey').innerHTML === "G" 
     && document.getElementById('newProgression').innerHTML === "1,4,6,5"){
-        console.log(`4 G yep`);
+        keyOfGProg1();
     } else if (document.getElementById('newKey').innerHTML === "G" 
         && document.getElementById('newProgression').innerHTML === "1,3,6,4"){
-            console.log(`5 G yep`);
+        keyOfGProg1();
     } else {
        console.log(`how...`)
     }
@@ -447,5 +447,84 @@ function keyOfEProg5(){
     } else {console.log(`incorrect, try again`, tryAgain())}
 }
 
+//Key of: F ||| Progression: 1,5,6,4
+function keyOfFProg1 (){
+    if (userInput1.value === "F" && userInput2.value === "C" && userInput3.value === "Dm" && userInput4.value === "A#" || "Bb") {
+        playTada();
+        console.log (`Nice One 6.1`, init())
+    } else {console.log(`incorrect, try again`, tryAgain())}
+}
 
+// Key of: F ||| Progression: 6,2,5,1
+function keyOfFProg2 (){
+    if (userInput1.value === "Dm" && userInput2.value === "Gm" && userInput3.value === "C" && userInput4.value === "F") {
+        playTada();
+            console.log (`Nice One 6.2`, init())
+    } else {console.log(`incorrect, try again`, tryAgain())}
+}
+
+// Key of: F ||| Progression: 6,4,1,5
+function keyOfFProg3(){
+    if (userInput1.value === "Dm" && userInput2.value === "A#" || "Bb" && userInput3.value === "F" && userInput4.value === "C") {
+        playTada();
+            console.log (`Nice One 6.3`, init())
+    } else {console.log(`incorrect, try again`, tryAgain())}
+}
+
+// key of: F ||| Progression: 1,4,6,5
+function keyOfFProg4(){
+    if (userInput1.value === "F" && userInput2.value === "A#" || "Bb" && userInput3.value === "Dm" && userInput4.value === "C") {
+        playTada();
+        console.log (`Nice One 6.4`, init())
+    } else {console.log(`incorrect, try again`, tryAgain())}
+}
+
+// key of: F ||| Progression: 1, 3, 6, 4
+function keyOfFProg5(){
+    if (userInput1.value === "F" && userInput2.value === "Am" && userInput3.value === "Dm" && userInput4.value === "A#" || "Bb") {
+        playTada();
+            console.log (`Nice One 6.5`, init())
+    } else {console.log(`incorrect, try again`, tryAgain())}
+}
+
+
+//Key of: G ||| Progression: 1,5,6,4
+function keyOfGProg1 (){
+    if (userInput1.value === "G" && userInput2.value === "D" && userInput3.value === "Em" && userInput4.value === "C") {
+        playTada();
+        console.log (`Nice One 7.1`, init())
+    } else {console.log(`incorrect, try again`, tryAgain())}
+}
+
+// Key of: G ||| Progression: 6,2,5,1
+function keyOfGProg2 (){
+    if (userInput1.value === "Em" && userInput2.value === "Gm" && userInput3.value === "D" && userInput4.value === "G") {
+        playTada();
+            console.log (`Nice One 7.2`, init())
+    } else {console.log(`incorrect, try again`, tryAgain())}
+}
+
+// Key of: G ||| Progression: 6,4,1,5
+function keyOfGProg3(){
+    if (userInput1.value === "Em" && userInput2.value === "C" && userInput3.value === "G" && userInput4.value === "D") {
+        playTada();
+            console.log (`Nice One 7.3`, init())
+    } else {console.log(`incorrect, try again`, tryAgain())}
+}
+
+// key of: G ||| Progression: 1,4,6,5
+function keyOfGProg4(){
+    if (userInput1.value === "G" && userInput2.value === "C" && userInput3.value === "Em" && userInput4.value === "D") {
+        playTada();
+        console.log (`Nice One 7.4`, init())
+    } else {console.log(`incorrect, try again`, tryAgain())}
+}
+
+// key of: G ||| Progression: 1, 3, 6, 4
+function keyOfGProg5(){
+    if (userInput1.value === "G" && userInput2.value === "Am" && userInput3.value === "Em" && userInput4.value === "C") {
+        playTada();
+            console.log (`Nice One 7.5`, init())
+    } else {console.log(`incorrect, try again`, tryAgain())}
+}
 
