@@ -260,16 +260,16 @@ function checkGame6(){
         keyOfFProg1();
     } else if (document.getElementById('newKey').innerHTML === "F" 
     && document.getElementById('newProgression').innerHTML === "6,2,5,1"){
-        keyOfFProg1();
+        keyOfFProg2();
     } else if (document.getElementById('newKey').innerHTML === "F" 
     && document.getElementById('newProgression').innerHTML === "6,4,1,5") {
-        keyOfFProg1();
+        keyOfFProg3();
     } else if (document.getElementById('newKey').innerHTML === "F" 
     && document.getElementById('newProgression').innerHTML === "1,4,6,5"){
-        keyOfFProg1();
+        keyOfFProg4();
     } else if (document.getElementById('newKey').innerHTML === "F" 
         && document.getElementById('newProgression').innerHTML === "1,3,6,4"){
-        keyOfFProg1();
+        keyOfFProg5();
     } else {
         checkGame7();
     }
