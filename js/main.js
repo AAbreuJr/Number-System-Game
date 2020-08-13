@@ -444,7 +444,7 @@ function keyOfCProg1 (){
 
 // Key of: C ||| Progression: 6,2,5,1
 function keyOfCProg2 (){
-    if (userInput1.value === "Am" && userInput2.value === "Em" && userInput3.value === "G" && userInput4.value === "C") {
+    if (userInput1.value === "Am" && userInput2.value === "Dm" && userInput3.value === "G" && userInput4.value === "C") {
         playTada();
         getRandomRight();
         setTimeout(function(){init();}, 3000);
