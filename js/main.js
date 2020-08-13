@@ -282,16 +282,16 @@ function checkGame7(){
         keyOfGProg1();
     } else if (document.getElementById('newKey').innerHTML === "G" 
     && document.getElementById('newProgression').innerHTML === "6,2,5,1"){
-        keyOfGProg1();
+        keyOfGProg2();
     } else if (document.getElementById('newKey').innerHTML === "G" 
     && document.getElementById('newProgression').innerHTML === "6,4,1,5") {
-        keyOfGProg1();
+        keyOfGProg3();
     } else if (document.getElementById('newKey').innerHTML === "G" 
     && document.getElementById('newProgression').innerHTML === "1,4,6,5"){
-        keyOfGProg1();
+        keyOfGProg4();
     } else if (document.getElementById('newKey').innerHTML === "G" 
         && document.getElementById('newProgression').innerHTML === "1,3,6,4"){
-        keyOfGProg1();
+        keyOfGProg5();
     } else {
        console.log(`how...`)
     }
