@@ -18,7 +18,7 @@
 
 ## Website View:
 ### Here is what the game looks like once you load the page:
-![Game Screen2] (https://i.imgur.com/khkgnpH.png)
+![Browser View](https://i.imgur.com/khkgnpH.png)
 
 ## Technology Implemented:
 - JavaScript
