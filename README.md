@@ -26,6 +26,7 @@
 - HTML
 - Git 
 - animate.css
+- Bootstrap
 
 ## Pseudocode:
 - When pages loads you get a random key.
