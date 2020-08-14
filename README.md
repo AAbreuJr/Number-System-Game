@@ -59,3 +59,6 @@
 - A counter for how many you got right in a row
 - Hint light bulb button for the first chord of the progression
 - Help button to further explain game
+
+## Credits:
+Big thanks to http://www.allwhitebackground.com/music-background.html/download/11082 for helping with the background image!
