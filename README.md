@@ -6,7 +6,7 @@
 ##
 ##
 ## To play the game:
-### Click [here] to play the game.
+### Click [here](http://nashvillenumbersystem.surge.sh/) to play the game.
 ##
 ##
 ## Motivation:
