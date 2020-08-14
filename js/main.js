@@ -351,7 +351,7 @@ function keyOfAProg4(){
 
 // key of: A ||| Progression: 1, 3, 6, 4
 function keyOfAProg5(){
-    if (userInput1.value === "A" && userInput2.value === "C#m" && userInput3.value === "F#m" && userInput4.value === "E") {
+    if (userInput1.value === "A" && userInput2.value === "C#m" && userInput3.value === "F#m" && userInput4.value === "D") {
         playTada();
         getRandomRight();
         setTimeout(function(){init();}, 3000);
