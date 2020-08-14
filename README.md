@@ -13,8 +13,12 @@
 ### When I first started to play with different bands, especially in the worship (CCM) genre, the Music Director (MD) would always call out numbers in different parts of songs. I had no clue what they were, so I had to learn what those numbers represented and engrave them in my head by reading and learning the hard way. I wish there were a game that helped with that. To help future musicians with this process, I decided to build this game, "Nashville Number System".
  
 ## Prototype View:
-### Here is what the game will look like once you press start:
+### Here is what the game will look like once load the page:
 ![Game Screen](https://i.imgur.com/PvYuIrx.png)
+
+## Website View:
+### Here is what the game looks like once you load the page:
+![Game Screen2] (https://i.imgur.com/khkgnpH.png)
 
 ## Technology Implemented:
 - JavaScript
@@ -50,5 +54,7 @@
 
 ## Stretch Goals:
 - Incorporate sharps and flats for the different keys
+- Timer
+- A counter for how many you got right in a row
 - Hint light bulb button for the first chord of the progression
 - Help button to further explain game
