@@ -25,32 +25,32 @@ const progressionArray = [
 //DISPLAY CORRECT
 const correctArr = [
     {
-        bottomDisplay: 'Correct! That’s it.',
+        bottomDisplay: 'CORRECT!',
     },
     {
-        bottomDisplay: 'Thats spot on!',
+        bottomDisplay: 'SPOT ON!',
     },
     {
-        bottomDisplay: 'Yes, that’s right.',
+        bottomDisplay: 'YEP!',
     },
     {
-        bottomDisplay: 'You are quite right.',
+        bottomDisplay: 'NICE!',
     },
 ]
 
 //DISPLAY INCORRECT
 const incorrectArr = [
     {
-        bottomDisplay: 'Incorrect! That’s not it.',
+        bottomDisplay: 'INCORRECT!',
     },
     {
-        bottomDisplay: 'I’m afraid that’s not quite right.',
+        bottomDisplay: 'NOT RIGHT!',
     },
     {
-        bottomDisplay: 'Nope, that’s wrong.',
+        bottomDisplay: 'NOPE!',
     },
     {
-        bottomDisplay: 'You are quite wrong.',
+        bottomDisplay: 'NOT QUITE!',
     },
 ]
 
@@ -305,7 +305,7 @@ function keyOfAProg1 (){
         playTada();
         getRandomRight();
         setTimeout(function(){init();}, 3000);
-    } else {
+    } else { displayInc.className = 'red'
         playWrong();
         getRandomWrong();
         setTimeout(function(){tryAgain();}, 3000);
@@ -552,7 +552,11 @@ function keyOfDProg5(){
         playTada();
         getRandomRight();
         setTimeout(function(){init();}, 3000);
-    } else {console.log(`incorrect, try again`, tryAgain())}
+    } else {
+        playWrong();
+        getRandomWrong();
+        setTimeout(function(){tryAgain();}, 3000);
+}    
 }
 
 //Key of: E ||| Progression: 1,5,6,4
