@@ -57,8 +57,6 @@ const incorrectArr = [
 
 /*------Variables (state)------*/
 
-// Variables might include (board/turn/winner)
-
 let randomKey = [];
 let chords = [];
 let randomProg = [];
