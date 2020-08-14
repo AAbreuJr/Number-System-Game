@@ -299,7 +299,7 @@ function checkGame7(){
 //CHECK USER INPUT AGAINST GAME
 // Key of: A ||| Progression: 1,5,6,4
 function keyOfAProg1 (){
-    if (userInput1.value === "A" && userInput2.value === "E" && userInput3.value === "F#m" || "Gbm" && userInput4.value === "D") {
+    if (userInput1.value === "A" && userInput2.value === "E" && userInput3.value === "F#m" && userInput4.value === "D") {
         playTada();
         getRandomRight();
         setTimeout(function(){init();}, 3000);
@@ -312,7 +312,7 @@ function keyOfAProg1 (){
 
 // Key of: A ||| Progression: 6,2,5,1
 function keyOfAProg2 (){
-    if (userInput1.value === "F#m" || "Gbm" && userInput2.value === "Bm" && userInput3.value === "E" && userInput4.value === "A") {
+    if (userInput1.value === "F#m" && userInput2.value === "Bm" && userInput3.value === "E" && userInput4.value === "A") {
         playTada();
         getRandomRight();
         setTimeout(function(){init();}, 3000);
@@ -325,7 +325,7 @@ function keyOfAProg2 (){
 
 // Key of: A ||| Progression: 6,4,1,5
 function keyOfAProg3(){
-    if (userInput1.value === "F#m" || "Gbm" && userInput2.value === "D" && userInput3.value === "A" && userInput4.value === "E") {
+    if (userInput1.value === "F#m" && userInput2.value === "D" && userInput3.value === "A" && userInput4.value === "E") {
         playTada();
         getRandomRight();
         setTimeout(function(){init();}, 3000);
@@ -351,7 +351,7 @@ function keyOfAProg4(){
 
 // key of: A ||| Progression: 1, 3, 6, 4
 function keyOfAProg5(){
-    if (userInput1.value === "A" && userInput2.value === "C#m" || "Dbm" && userInput3.value === "F#m" && userInput4.value === "E") {
+    if (userInput1.value === "A" && userInput2.value === "C#m" && userInput3.value === "F#m" && userInput4.value === "E") {
         playTada();
         getRandomRight();
         setTimeout(function(){init();}, 3000);
@@ -364,7 +364,7 @@ function keyOfAProg5(){
 
 // Key of: B ||| Progression: 1,5,6,4
 function keyOfBProg1 (){
-    if (userInput1.value === "B" && userInput2.value === "F#" && userInput3.value === "G#m" || "Abm" && userInput4.value === "E") {
+    if (userInput1.value === "B" && userInput2.value === "F#" && userInput3.value === "G#m" && userInput4.value === "E") {
         playTada();
         getRandomRight();
         setTimeout(function(){init();}, 3000);
@@ -377,7 +377,7 @@ function keyOfBProg1 (){
 
 // Key of: B ||| Progression: 6,2,5,1
 function keyOfBProg2 (){
-    if (userInput1.value === "G#m" || "Abm" && userInput2.value === "C#m" && userInput3.value === "F#" && userInput4.value === "B") {
+    if (userInput1.value === "G#m" && userInput2.value === "C#m" && userInput3.value === "F#" && userInput4.value === "B") {
         playTada();
         getRandomRight();
         setTimeout(function(){init();}, 3000);
@@ -390,7 +390,7 @@ function keyOfBProg2 (){
 
 // Key of: B ||| Progression: 6,4,1,5
 function keyOfBProg3(){
-    if (userInput1.value === "G#m" || "Abm" && userInput2.value === "E" && userInput3.value === "B" && userInput4.value === "F#") {
+    if (userInput1.value === "G#m" && userInput2.value === "E" && userInput3.value === "B" && userInput4.value === "F#") {
         playTada();
         getRandomRight();
         setTimeout(function(){init();}, 3000);
@@ -403,7 +403,7 @@ function keyOfBProg3(){
 
 // key of: B ||| Progression: 1,4,6,5
 function keyOfBProg4(){
-    if (userInput1.value === "B" && userInput2.value === "E" && userInput3.value === "G#m" || "Abm" && userInput4.value === "F#" || "Gb") {
+    if (userInput1.value === "B" && userInput2.value === "E" && userInput3.value === "G#m" && userInput4.value === "F#") {
         playTada();
         getRandomRight();
         setTimeout(function(){init();}, 3000);
@@ -416,7 +416,7 @@ function keyOfBProg4(){
 
 // key of: B ||| Progression: 1, 3, 6, 4
 function keyOfBProg5(){
-    if (userInput1.value === "B" && userInput2.value === "D#m" || "Ebm" && userInput3.value === "G#m" || "Abm" && userInput4.value === "E") {
+    if (userInput1.value === "B" && userInput2.value === "D#m" && userInput3.value === "G#m" && userInput4.value === "E") {
         playTada();
         getRandomRight();
         setTimeout(function(){init();}, 3000);
@@ -507,7 +507,7 @@ function keyOfDProg1 (){
 
 // Key of: D ||| Progression: 6,2,5,1
 function keyOfDProg2 (){
-    if (userInput1.value === "Bm" && userInput2.value === "F#m" || "Gbm" && userInput3.value === "A" && userInput4.value === "D") {
+    if (userInput1.value === "Bm" && userInput2.value === "F#m" && userInput3.value === "A" && userInput4.value === "D") {
         playTada();
         getRandomRight();
         setTimeout(function(){init();}, 3000);
@@ -546,7 +546,7 @@ function keyOfDProg4(){
 
 // key of: D ||| Progression: 1, 3, 6, 4
 function keyOfDProg5(){
-    if (userInput1.value === "D" && userInput2.value === "F#m" || "Gbm" && userInput3.value === "Bm" && userInput4.value === "G") {
+    if (userInput1.value === "D" && userInput2.value === "F#m" && userInput3.value === "Bm" && userInput4.value === "G") {
         playTada();
         getRandomRight();
         setTimeout(function(){init();}, 3000);
@@ -559,7 +559,7 @@ function keyOfDProg5(){
 
 //Key of: E ||| Progression: 1,5,6,4
 function keyOfEProg1 (){
-    if (userInput1.value === "E" && userInput2.value === "B" && userInput3.value === "C#m" || "Dbm" && userInput4.value === "A") {
+    if (userInput1.value === "E" && userInput2.value === "B" && userInput3.value === "C#m" && userInput4.value === "A") {
         playTada();
         getRandomRight();
         setTimeout(function(){init();}, 3000);
@@ -572,7 +572,7 @@ function keyOfEProg1 (){
 
 // Key of: E ||| Progression: 6,2,5,1
 function keyOfEProg2 (){
-    if (userInput1.value === "C#m" || "Dbm" && userInput2.value === "F#m" || "Gbm" && userInput3.value === "B" && userInput4.value === "E") {
+    if (userInput1.value === "C#m" && userInput2.value === "F#m" && userInput3.value === "B" && userInput4.value === "E") {
         playTada();
         getRandomRight();
         setTimeout(function(){init();}, 3000);
@@ -585,7 +585,7 @@ function keyOfEProg2 (){
 
 // Key of: E ||| Progression: 6,4,1,5
 function keyOfEProg3(){
-    if (userInput1.value === "C#m" || "Dbm" && userInput2.value === "A" && userInput3.value === "E" && userInput4.value === "B") {
+    if (userInput1.value === "C#m" && userInput2.value === "A" && userInput3.value === "E" && userInput4.value === "B") {
         playTada();
         getRandomRight();
         setTimeout(function(){init();}, 3000);
@@ -598,7 +598,7 @@ function keyOfEProg3(){
 
 // key of: E||| Progression: 1,4,6,5
 function keyOfEProg4(){
-    if (userInput1.value === "E" && userInput2.value === "A" && userInput3.value === "C#m" || "Dbm" && userInput4.value === "B") {
+    if (userInput1.value === "E" && userInput2.value === "A" && userInput3.value === "C#m" && userInput4.value === "B") {
         playTada();
         getRandomRight();
         setTimeout(function(){init();}, 3000);
@@ -611,7 +611,7 @@ function keyOfEProg4(){
 
 // key of: E ||| Progression: 1, 3, 6, 4
 function keyOfEProg5(){
-    if (userInput1.value === "E" && userInput2.value === "G#m" || "Abm" && userInput3.value === "C#m" || "Dbm" && userInput4.value === "A") {
+    if (userInput1.value === "E" && userInput2.value === "G#m" && userInput3.value === "C#m" && userInput4.value === "A") {
         playTada();
         getRandomRight();
         setTimeout(function(){init();}, 3000);
@@ -624,7 +624,7 @@ function keyOfEProg5(){
 
 //Key of: F ||| Progression: 1,5,6,4
 function keyOfFProg1 (){
-    if (userInput1.value === "F" && userInput2.value === "C" && userInput3.value === "Dm" && userInput4.value === "A#" || "Bb") {
+    if (userInput1.value === "F" && userInput2.value === "C" && userInput3.value === "Dm" && userInput4.value === "A#") {
         playTada();
         getRandomRight();
         setTimeout(function(){init();}, 3000);
@@ -650,7 +650,7 @@ function keyOfFProg2 (){
 
 // Key of: F ||| Progression: 6,4,1,5
 function keyOfFProg3(){
-    if (userInput1.value === "Dm" && userInput2.value === "A#" || "Bb" && userInput3.value === "F" && userInput4.value === "C") {
+    if (userInput1.value === "Dm" && userInput2.value === "A#" && userInput3.value === "F" && userInput4.value === "C") {
         playTada();
         getRandomRight();
         setTimeout(function(){init();}, 3000);
@@ -663,7 +663,7 @@ function keyOfFProg3(){
 
 // key of: F ||| Progression: 1,4,6,5
 function keyOfFProg4(){
-    if (userInput1.value === "F" && userInput2.value === "A#" || "Bb" && userInput3.value === "Dm" && userInput4.value === "C") {
+    if (userInput1.value === "F" && userInput2.value === "A#" && userInput3.value === "Dm" && userInput4.value === "C") {
         playTada();
         getRandomRight();
         setTimeout(function(){init();}, 3000);
@@ -676,7 +676,7 @@ function keyOfFProg4(){
 
 // key of: F ||| Progression: 1, 3, 6, 4
 function keyOfFProg5(){
-    if (userInput1.value === "F" && userInput2.value === "Am" && userInput3.value === "Dm" && userInput4.value === "A#" || "Bb") {
+    if (userInput1.value === "F" && userInput2.value === "Am" && userInput3.value === "Dm" && userInput4.value === "A#") {
         playTada();
         getRandomRight();
         setTimeout(function(){init();}, 3000);
